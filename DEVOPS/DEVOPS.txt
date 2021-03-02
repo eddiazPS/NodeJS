@@ -1,3 +1,15 @@
-DEVOPS
+1. Que es DEVOPS
 
 nos ofrece un panorama amplio para poder interactuar con mas herramientas que simplifican y permiten desarrrollar , administar , probar , supervisar y gestionar en si el ciclo infinito que tienen la aplicaciones concurridas    
+
+
+2. Ideas para generar más empatía, confianza y seguridad psicológica en el equipo.
+
+empatía
+poder entender un problema desde otro punto de vista o desde otras posibilidades nos da un panorama mas amplio del problema
+
+confianza
+de menos a mas podemos demostrar que somos los apropiados para nuestro cargo , a medida que nos den confianza en lo asignado 
+
+seguridad psicológica
+la seguridad psicologica se fortalece con los exitos y experiencias  positivas como negativas
