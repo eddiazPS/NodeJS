@@ -1,0 +1,30 @@
+  1. Que es DEVOPS
+
+nos ofrece un panorama amplio para poder interactuar con mas herramientas que simplifican y permiten desarrrollar , administar , probar , supervisar y gestionar en si el ciclo infinito que tienen la aplicaciones concurridas    
+
+
+2. Ideas para generar más empatía, confianza y seguridad psicológica en el equipo.
+
+empatía
+poder entender un problema desde otro punto de vista o desde otras posibilidades nos da un panorama mas amplio del problema
+
+confianza
+de menos a mas podemos demostrar que somos los apropiados para nuestro cargo , a medida que nos den confianza en lo asignado 
+
+seguridad psicológica
+la seguridad psicologica se fortalece con los exitos y experiencias  positivas como negativas   
+
+3.)
+a. Herramientas que podrían compartir con los demás departamentos para una mejor colaboración.
+
+En la etapa de planificación y codificación se puede usar Jira o trello para cuantificar el proyecto y numero de pasos a seguir y si se puede interactuar con los otros departamentos de una manera adecuada  mucho mejor 
+En la etapa de monitoreo  se puede usar Teams o Slack   para generar mensajes de supervicion a distintos departamentos involucrados 
+
+
+b. Estructura para que exista una comunicación con todos los departamentos de la empresa: Pueden realizar un diagrama.
+
+recursos humanos es el departamento indicado para poder afianzar de distintas formas una empresa, por medio de campañas y charlas. Mas un representante de recursos humanos en cada departamento, se pueden empezar a comunicar los principales lideres de los departamentos 
+
+c. Mecanismo para la toma de decisiones (e.g. Votación electronica anonima, Un consejo de arquitectos, etc.)
+
+la democracia es el mecanismo que yo propongo por medio de una votacion electronica anonima. 
