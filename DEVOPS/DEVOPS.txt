@@ -39,11 +39,11 @@ https://drive.google.com/file/d/1s-eUF6lfQ6sVo0gxTqWTDeLKopha_qeF/view?usp=shari
 
 
 
-Que es DEVOPS
+Que es DevOps
 
 DevOps es un marco de trabajo que ofrece , herramientas procesos y decisiones transparentes entre componentes para encontrar un resultado continuo.
 
-La herramienta es un punto de partida, un facilitador para que los integrantes del proceso puedan actuar rápidamente dentro de la cultura DevOps.
+Las herramientas son un punto de partida, un facilitador para que los integrantes del proceso puedan actuar facilmente dentro de la cultura DevOps.
 
 Una empresa que quiere dejar la cultura convencional para empezar con la cultura DevOps, tiene que cambiar la forma de actuar y resolver sus procesos, es mejor tener resultados continuamente, a esperar un resultado general el cual puede entrar en demoras por el mismo proceso.
 
