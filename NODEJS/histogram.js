@@ -114,7 +114,7 @@ async function histogramFromStdin(){                              //  funcion qu
 
 
 
-histogramFromStdin().then(histogram =>{
+histogramFromStdin().then(histogram =>{                           // imprimimos en consola 
 
 	console.log(histogram.toString());
 
