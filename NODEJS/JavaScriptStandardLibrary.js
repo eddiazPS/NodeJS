@@ -49,9 +49,9 @@ let product = 1;
 
 // Ejercicio 
 
-// albun del mundial  
+// album del mundial  
 
-let LaminaEncontrada = new Set ([2,33,5,77,45]);   //   el albun nuevo traia un sobre de 5 laminas    
+let LaminaEncontrada = new Set ([2,33,5,77,45]);   //   el album nuevo traia un sobre de 5 laminas    
 console.log(LaminaEncontrada.size+" Laminas encontradas de un sobre");
 LaminaEncontrada.add(22).add(43).add(55).add(3).add(4).add(20).add(56).add(87).add(90).add(45); // se compran dos sobres de 5  
 console.log(LaminaEncontrada.size+" Laminas encontradas de 3 sobres");
