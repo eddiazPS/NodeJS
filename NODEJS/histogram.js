@@ -46,11 +46,11 @@ class Histogram {
 
 		for (let character of text) {
 
-			let count = this.letterCount.get(character);
+			let count = this.letterCount.get(character);              //  trae a variable count el numero de caracteres contados
 
-			this.letterCount.set(character,count+1);
+			this.letterCount.set(character,count+1);                    // guarda en map letterCount el nuevo total por caracter
 
-			this.totalLetters++;                                       //contador 
+			this.totalLetters++;                                       //contador del total de las letras
 
 		}
 

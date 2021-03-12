@@ -7,7 +7,7 @@
 
 
 let palabra  = /[aeiou]/g;
-let text = "Holaaaaaaa";
+let text = "Holaaaaaaaee";
 let match = text.match(palabra);
 let vocales , inicio;
 
