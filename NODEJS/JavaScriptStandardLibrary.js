@@ -676,7 +676,7 @@ console.log(toISO);
 
 // cuantos milisegundos hay desde 1970 a hoy 
 let epoch4 = new Date (0);  
-console.log(epoch)
+console.log(epoch4)
 var nowA = new Date ();
 let ms = nowA - epoch4   ;
 console.log("milisegundos entre 2021 y 1970 :"+ms.toLocaleString());
