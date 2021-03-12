@@ -685,3 +685,163 @@ console.log("milisegundos entre 2021 y 1970 :"+ms.toLocaleString());
 //tiempo final del ejercicio
 let endTime2 = Date.now();
 console.log(endTime2-startTime2);
+
+
+
+
+
+
+
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//*********************************************EXCEPCIONES *******************************************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+/**
+ * 
+ * 
+ * classe error  -> throw
+ * 
+ * se crea el objeto error , ubicacion en la pila  y se recomienda ubicarlo antes del throw
+ * 
+ * propiedad se llama error 
+ * 
+ * node 
+ * 
+ * se puden definir subclases como en java, de error
+ * se puden definir propias propiedades
+ * 
+ * 
+ * No usar if para comparar errores  usar el throw, manejar Excepciones -> try catch
+ */
+
+
+class HTTPError extends Error {
+
+  constructor(status,statusText,URL){
+    super(`${status} ${statusText}: ${URL} `);
+    
+    this.status = status;
+    this.statusText = statusText;
+    this.URL = URL ;
+  }
+
+  get name(){
+
+    return "HTTPerror";
+  }
+}
+
+// probar
+
+let error = new HTTPError (404,"Not Found","https://zoom.us/j/92769666327?pwd=bU5vQTFBbC81LzVPamFBd0Y3UEJydz09");
+
+console.log( error.status);
+console.log(error.message);
+console.log( error.name);
+
+
+// ejemplo de dos sublases de errores .message .name
+
+
+
+//-1-------------Validar Campos-------------------------------------
+
+
+class ValidaError extends Error {
+
+  constructor(name,message){
+    super(`${name} ${message} `);
+    
+    this.name = name;
+    this.message= message;
+  } 
+}
+
+// probar
+
+let error2 = new ValidaError ("Error de validacion","Complete los campos que tienen *");
+
+console.log( error2.name);
+console.log(error2.message);
+
+
+
+
+//-2----------------division entre cero----------------------------------
+
+
+class DivError extends Error {
+
+  constructor(name,message,x){
+    super(`${name} ${message} - ${x} `);
+    
+    this.name = name;
+    this.message= message;
+    this.x = x;
+  } 
+}
+
+// probar
+
+let error3 = new DivError ("Error Division entre cero","No se pude dividir en 0 ",9);
+
+console.log( error3.name);
+console.log(error3.x+" "+error3.message);
+
+
+//----------------------------------------------------------
+
+/*this.codigo 
+this.descripcion
+this.parametro*/
+
+
+function ValidateCedula (cedula){
+ if (cedula == "" ){
+  throw new ValidaError("Error de validacion","campo vacio");
+ }
+}
+try {
+  ValidateCedula("");
+} catch (error) {
+  console.error(error.name);
+  console.error(error.message);
+  //console.error(error.stack);
+}
+
+
+//------------------------------------------------------
+
+
+function ValidateDiv (numero){
+  if ((parseFloat( numero )  === numero) && (numero != null) ){
+   throw new  DivError("Error Division entre cero","No se pude dividir en 0 ",numero);
+  }
+ }
+ try {
+  ValidateDiv(9);
+ } catch (error) {
+   console.error(error.name);
+   console.error(error.message);
+   console.error(error.x);
+   //console.error(error.stack);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
