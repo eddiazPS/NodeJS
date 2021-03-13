@@ -831,14 +831,68 @@ function ValidateDiv (numero){
 
 
 
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//*********************************************SERIALIZACIONES*******************************************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+
+
+/**
+ * 
+ * 
+ * Ttransformar la estructura de datos a bites o a caracteres para que se puedan trasmitir por protocolos HTTP 
+ * convertir estructuras de datos en bites o caracteres se conoce como serializacion 
+ * 
+ * JSON  conotacion de un objeto java script 
+ * 
+ * cuando se va a tramitir datos atravez de la red, nesecitamos convertir estructuras de datos en cadenas y para esto necesitamos serializar, la mejor forma para serializar estructuras de datos es usando JSON 
+ * 
+ * que acepta JSON: cadenas caracteres, numeros primitivos(enteros, doubles, float ) , booleanos , matrices objetos javascripts
+ * 
+ * JSON no admite:  Maps   Sets , objetos regExp, dates , Typed arrays 
+ * 
+ * como se puede serailizar y deseralizar ->     JSON.stringify() : para serializar 
+ *                                               JSON.parse() : para deserializar 
+ * 
+ *  
+ * 
+ */
+
+
+// {estructura java string}
+
+
+let object = {s:"",n:0,a:[true,false,null]};
+
+let serializacion =  JSON.stringify(object);
+console.log(serializacion); // texto
+
+let deserializacion =  JSON.parse(serializacion);
+console.log(deserializacion); // objeto
+
+
+console.log(JSON.stringify(object,null,2));
+//       null , validaciones  casi no se usa   2  salto de linea dos espacios de sangria tabulacion recomendado
+console.log(JSON.parse(JSON.stringify(object,null,2) ));
+//                                      el parece ignora los espacios (sangria) que se le asigna en stringify              
 
 
 
 
 
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//********************************************* API internacionalizacion ******************************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+//  API    nos permite formatera numeros , formato de monea o porsentages    
 
 
-
+let euros = Intl.NumberFormat("es",{style:"currency",currency:"EUR"});
+console.log(euros.format(10));
 
 
 

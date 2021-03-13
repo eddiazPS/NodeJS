@@ -60,7 +60,7 @@ class Histogram {
 
 	toString(){                                                          //sobreEscribimos la funcion toString para que cuando sea llamada 
 
-		let entries = [...this.letterCount];                         //convierte  de tipo clave valor               
+		let entries = [...this.letterCount];                         //convierte a un arreglo -  de tipo clave valor  a array              
 
 		entries.sort((a,b)=>{                                        // los organiza  -1   o 1   y si no b - a 
 
@@ -78,7 +78,7 @@ class Histogram {
 
 		for(let entry of entries){
 
-			entry[1] = entry[1] / this.totalLetters * 100;
+			entry[1] = entry[1] / this.totalLetters * 100;                        // promedio
 
 		}
 
