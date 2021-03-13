@@ -4,8 +4,8 @@ S3
 
 EC2
 
-Lambda
+Balanceador de Carga
 
-balanceador de carga
+Lambda
 
 API . VPC
