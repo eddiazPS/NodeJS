@@ -6,4 +6,6 @@ EC2
 
 Lambda
 
+balanceador de carga
+
 API . VPC
