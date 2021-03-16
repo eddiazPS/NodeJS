@@ -1131,15 +1131,15 @@ setTimeout (()=>{clearInterval(clock);},10000);
 
 //****************************************************************************************************************************
 //****************************************************************************************************************************
-//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY**************** ******************************************************
+//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY********************************************
 //****************************************************************************************************************************
 //****************************************************************************************************************************
 
 /**
- *  Funcion que ingresa String para generar clave y retorna un acceso a un protocolo ftp con una API de consulta al historial del usuario   
- * 
+   *  Funcion recibe un String como parametro para generar clave; retorna dos URLs  1)   protocolo ftp  
+   *                                                                                2)  API de consulta al historial del usuario.
+   *   tambien envia la fecha de vencimiento para la clave y los costos por usar el servicio.   
  */
-
 
 
 

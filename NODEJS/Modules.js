@@ -155,15 +155,15 @@ console.log(calculadora.sumar(1,4));
 
 //****************************************************************************************************************************
 //****************************************************************************************************************************
-//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY**************** ******************************************************
+//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY********************************************
 //****************************************************************************************************************************
 //****************************************************************************************************************************
 
 /**
-   *  Funcion recibe un String como parametro para generar clave; retorna dos URLs  1)   protocolo ftp  2)  API de consulta al historial del usuario.  tambien envia la fecha de vencimiento y los costos por usar el servicio * 
- */
-
-
+   *  Funcion recibe un String como parametro para generar clave; retorna dos URLs  1)   protocolo ftp  
+   *                                                                                2)  API de consulta al historial del usuario.
+   *   tambien envia la fecha de vencimiento para la clave y los costos por usar el servicio.  
+*/
 
 
 class ErrorDeContraseña extends Error {
