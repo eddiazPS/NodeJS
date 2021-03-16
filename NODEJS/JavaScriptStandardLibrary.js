@@ -331,7 +331,15 @@ let pattern7 = /[...]/;    //  coinside con cualquier caracter entre corchetes
 let pattern8 = /[^...]/;    //  coinside con cualquier caracter que no este entre corchetes
 
 
+let pattern88 = / [a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
+
+
+/**
+ * Para comprobar que el usuario introduce una dirección de email válida podemos hacer distintos tipos de comprobaciones. La más básica es comprobar que la cadena contiene cualquier número de caracteres seguido del carácter @ segudio de cualquier número de caracteres, seguido de un punto, y seguido de cualquier número de caracteres. Esta validación es amplia y no aceptaría la mayor parte de direcciones no válidas, por ejemplo no se aceptaría <<andres@gmailcom>> porque le falta el punto.
+En general será suficiente usar una expresión regular simple del tipo:
+ */
+ let pt = /\S+@\S+\.\S+/; 
 
 /**
  * Repeticiones  en expreciones regulares 
@@ -450,8 +458,8 @@ console.log(text2.match(/\d+/));
 //---------------------------Programa match   analizar una URL 
 
 
-let url = /(\w+):\/\/([\w.]+)\/(\S*)/;
-let text3 = "Visita mi blog  https://zoom.us/j/92769666327?pwd=bU5vQTFBbC81LzVPamFBd0Y3UEJydz09";
+let url = /(\w+):\(\/([\w.]+)\/(\S*)/;
+let text3 = "Visita mi blog  https:(/zoom.us/j/92769666327?pwd=bU5vQTFBbC81LzVPamFBd0Y3UEJydz09";
 let match = text3.match(url);
 let fullUrl, host, path , protocol;
 
@@ -538,7 +546,7 @@ console.log(century2);
 
 let century3 = Date.UTC (2100,0,1);
 console.log(century3); // milisegundos 
-
+console.log(now.toUTCString());
 
 let century4 = new Date (Date.UTC (2100,0,1));  // convierte en una fecha normal 
 console.log(century4); 
@@ -863,6 +871,14 @@ function ValidateDiv (numero){
 
 // {estructura java string}
 
+let array0 = [1,2,3,4,5];
+console.log(array0);
+
+let array2D = [[4,2],[2,3,4],[1,2],null,[4]]
+console.log(array2D);
+
+
+
 
 let object = {s:"",n:0,a:[true,false,null]};
 
@@ -895,7 +911,180 @@ let euros = Intl.NumberFormat("es",{style:"currency",currency:"EUR"});
 console.log(euros.format(10));
 
 
+ 
+
+  let dolares = Intl.NumberFormat("es", { style: "currency", currency: "USD" });
+  console.log(dolares.format(10));
+
+  let pesos = Intl.NumberFormat("es", { style: "currency", currency: "COP" });
+  console.log(pesos.format(10));
+
+  let Libras = Intl.NumberFormat("es", { style: "currency", currency: "GBP" });
+  console.log(Libras.format(10));
+
+//google ->  1000 EUR to COP 
+
+
+// formato a un arreglo 
+let data = [0.05 , 0.75 , 1 ]; // Intl.NumberFormat("es", { style: "currency", currency: "GBP" });
+let formatData = Intl.NumberFormat(undefined,{style:"percent",minimumFractionDigits:1,maximumFractionDigits:1}).format;
+console.log(data.map(formatData));
+
+
+let arabic = Intl.NumberFormat("ar",{useGrouping:false}).format;
+console.log(arabic(12345678910));
+
+let indi = Intl.NumberFormat("hi-IN-u-nu-deva").format;
+console.log(indi(12345678910));
+
+// esta api se pude usar para las fechas formato defeinido dependiendo de la region ********************************************************************* 
+
+
+let date= new Date("2021-03-16T08:54:30Z");
+
+
+let date1= new Date("2021-03-16T08:54:30Z");
+console.log(Intl.DateTimeFormat("en-US").format(date));
+
+
+
+//FRANCIA
+console.log(Intl.DateTimeFormat("en-FR").format(date));
+
+//ESPAÑA
+console.log(Intl.DateTimeFormat("en-ES").format(date));
 
 
 
 
+let  opts = {weekday:"long",month:"long", year : "numeric",date:"numeric"}
+console.log(Intl.DateTimeFormat("en-US",opts).format(date1))
+
+
+//Digitos de los minutos 
+
+
+//opts = {hour:"numeric",minute:"2-digit"};
+opts = {hour:"numeric",minute:"2-digit",hour12:"true",hourCycle:"H11"};   // media noche 00 ;   H12   12    H24
+
+
+/**
+ * h11: Media noche 0 y 11 de la noche 11PM
+ * h12: Media noche 12
+ * h23: Media noche 0 y 11 serain 23PM
+ * h24: Media noche  24 
+ * 
+ * 
+ */
+
+
+
+//console.log(Intl.DateTimeFormat("en-US",opts).format(date1))
+
+
+// calendarios no cristianos 
+
+//hebreo
+//console.log(Intl.DateTimeFormat("en-u-ca-hebrew",opts).format(date1));
+
+// año hereo
+let opts2 = {year:"numeric",era:"short"};
+console.log(Intl.DateTimeFormat("en-u-ca-hebrew",opts2).format(date1));
+
+//budista
+console.log(Intl.DateTimeFormat("en-u-ca-buddhist",opts2).format(date1));
+//chino
+console.log(Intl.DateTimeFormat("en-u-ca-chinese",opts2).format(date1));
+// persa
+console.log(Intl.DateTimeFormat("en-u-ca-persian",opts2).format(date1));
+
+
+
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//********************************************* API DE URL ******************************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+
+
+/** 
+ * desintegra la URL
+ * 
+ */
+
+
+let url2 = new URL("https://example.com:8000/path/name?q=term#fragment");
+
+
+console.log(url2.href);
+console.log(url2.origin);
+console.log(url2.protocol);
+console.log(url2.host);
+console.log(url2.hostname);
+console.log(url2.port);
+console.log(url2.pathname);
+console.log(url2.search);
+console.log(url2.hash);
+
+//************************************************************************************ */ protocolo ftp
+let url3 = new URL("ftp://admin:1337!@ftp.example.com/"); 
+
+console.log(url3.username);
+console.log(url3.password);
+
+console.log(url3.href);
+console.log(url3.origin);
+console.log(url3.protocol);
+console.log(url3.host);
+console.log(url3.hostname);
+console.log(url3.port);
+console.log(url3.pathname);
+console.log(url3.search);
+console.log(url3.hash);
+
+
+let url4 = new URL ("https://example.com");
+
+console.log(url4.pathname="API/search");
+console.log(url4.search="q=test");
+
+console.log(url4.toString());
+
+
+
+// se le agreagan parametros , cambian   , preguntas has ***************************************************++
+let url5 = new URL("https://example.com");
+console.log(url5.search);   // no tiene parametros 
+console.log(url5.searchParams.append("q","test"));
+console.log(url5.search);
+console.log(url5.href);
+
+
+url5.searchParams.set ("q","x");
+console.log(url5.search);
+
+
+console.log(url5.searchParams.get("q"));
+
+console.log(url5.searchParams.has("q"));
+
+
+url5.searchParams.append ("others","w");
+console.log(url5.search);
+console.log(url5.href);
+// si se repiten 
+
+url5.searchParams.append ("others","rw");
+console.log(url5.searchParams.getAll("others"));
+
+
+console.log(url5.searchParams.sort());
+console.log(url5.search);
+
+// url en array ***************************************************************************************
+console.log([... url5.searchParams]);
+
+url5.searchParams.delete("others");
+
+console.log(url5.search);
