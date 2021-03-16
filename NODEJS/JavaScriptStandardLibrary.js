@@ -1135,6 +1135,14 @@ setTimeout (()=>{clearInterval(clock);},10000);
 //****************************************************************************************************************************
 //****************************************************************************************************************************
 
+/**
+ *  Funcion que ingresa String para generar clave y retorna un acceso a un protocolo ftp con una API de consulta el historial por usuario y clave  
+ * 
+ */
+
+
+
+
 class ErrorDeContraseña extends Error {
 
   
@@ -1242,7 +1250,8 @@ function NuevaContraseña(newpss, numSeg) {
   //SERIALIZACION DEL OBJETO DE RESPUESTA
 
   let objResultadoSERZ = { Contraseña: ContraseñaDeSeguridad, fechas: [now, fechaVencimiento, fechaVencimiento.toUTCString()], valorMoneda: [pesos.format(costoCOP), dolares.format(cosrtUSD), euros.format(cosrtEUR)] };
-  
+  //console.log("EL OBJETO \n");
+  //console.log( objResultadoSERZ);
   let serializacionRes = JSON.stringify(objResultadoSERZ);
  
   let deserializacionRes = JSON.parse(serializacionRes);
