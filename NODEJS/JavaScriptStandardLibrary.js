@@ -1136,7 +1136,7 @@ setTimeout (()=>{clearInterval(clock);},10000);
 //****************************************************************************************************************************
 
 /**
- *  Funcion que ingresa String para generar clave y retorna un acceso a un protocolo ftp con una API de consulta el historial por usuario y clave  
+ *  Funcion que ingresa String para generar clave y retorna un acceso a un protocolo ftp con una API de consulta al historial del usuario   
  * 
  */
 

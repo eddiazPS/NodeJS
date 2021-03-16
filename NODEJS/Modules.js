@@ -160,9 +160,9 @@ console.log(calculadora.sumar(1,4));
 //****************************************************************************************************************************
 
 /**
- *  Funcion que ingresa String para generar clave y retorna un acceso a un protocolo ftp con una API de consulta el historial por usuario y clave  
- * 
+   *  Funcion recibe un String como parametro para generar clave; retorna dos URLs  1)   protocolo ftp  2)  API de consulta al historial del usuario.  tambien envia la fecha de vencimiento y los costos por usar el servicio * 
  */
+
 
 
 
