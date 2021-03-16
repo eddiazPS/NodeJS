@@ -21,8 +21,8 @@ if (match != null ){
   console.log(`vocales: ${vocales}` );
 
 
-
-
+  const mySet2 = new Set([[1,2],[3,4]]);
+console.log (mySet2);
 
 // *************************************************************************************************************************************
   //2- A veces nos intersa no sólo saber si una cadena cumple un determinado patrón,
