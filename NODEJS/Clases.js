@@ -54,7 +54,7 @@ console.log([...range]);
 
 
 
-//FORMA ACTUAL de crear clases en JS ////////////////////////////////////////////////////////////////////////////7
+//FORMA ACTUAL de crear clases en JS 
 
 class Range1 {
 
