@@ -174,7 +174,7 @@ console.log(cuadrado2.toString());
 
 class PentagonoRegular extends Cuadrado{
     constructor (lado){
-        if( lado%2 == 0 ){
+        if(new Cuadrado(lado).ladoPar()){   
             super(lado+1);
         }else {
             super(lado+8);
@@ -185,7 +185,7 @@ class PentagonoRegular extends Cuadrado{
     }
 }
 
-let pentagonoRegular1 = new PentagonoRegular (1)
+let pentagonoRegular1 = new PentagonoRegular (8)
 console.log(pentagonoRegular1.ladoPar(5));
 console.log(pentagonoRegular1.toString())
 
