@@ -102,7 +102,7 @@ console.log (calculadoraInit.restar(2,4));
 console.log (calculadoraInit.multiplicar(2,4));
 
 
-
+/*
 
 const modules = {};
 
@@ -151,18 +151,20 @@ console.log(stats.mean([1,2,3,9]));
 
 const calculadora = require('calculadora.js');
 console.log(calculadora.sumar(1,4));
-
+*/
 
 //****************************************************************************************************************************
 //****************************************************************************************************************************
 //********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY********************************************
 //****************************************************************************************************************************
 //****************************************************************************************************************************
+ 
 
 /**
-   *  Funcion recibe un String como parametro para generar clave; retorna dos URLs  1)   protocolo ftp  
-   *                                                                                2)  API de consulta al historial del usuario.
-   *   tambien envia la fecha de vencimiento para la clave y los costos por usar el servicio.  
+   *  Por medio de una funcion TIMER ejecuto dos veces la Funcion NuevaContraseña, esta  recibe un String como parametro para
+   *  generar la clave; la funcion retorna dos URLs  1)   protocolo ftp  
+   *                                                 2)   API de consulta al historial del usuario.
+   *   tambien envia la fecha de vencimiento para la clave y los costos por usar cada  servicio.  
 */
 
 
@@ -185,21 +187,21 @@ class ErrorDeContraseña extends Error {
     let user = "edgAdm7";
   
   
-    // EXCEPCIONES  
+    // EXCEPCIONES
     if (newpss.length < 6) throw new ErrorDeContraseña(-2, "la contraseña ninimo tiene que tener 6 caracters", newpss);
     if (newpss.length > 10) throw new ErrorDeContraseña(-3, "la contraseña naximo tiene que tener 10 caracters", newpss);
     ContraseñaDeSeguridad = newpss;
   
     if (numSeg == null) throw new ErrorDeContraseña(-4, "el numero de seguridad es obligatorio", newpss);
-    // ARRAYS TIPO     
+    // ARRAYS TIPO
   
     let more = new Uint8Array([12 * numSeg, 234 / numSeg, 45 - numSeg]);
-    let sumTipo = more[0] + more[1] + more[2] + stats.numero2();  //***************************************MODULE
+    let sumTipo = more[0] + more[1] + more[2] + blindNum.numero2();  //***************************************MODULE
   
     ContraseñaDeSeguridad = ContraseñaDeSeguridad + sumTipo;
   
   
-    // MAP SET
+    //  SET MAP
   
     let setP = new Set();
     setP.add("Per");
@@ -221,29 +223,29 @@ class ErrorDeContraseña extends Error {
     if (numSeg % 2 == 0) {
       let setA = MapDir.get("1");
       let myArr1 = Array.from(setA);
-      ContraseñaDeSeguridad = ContraseñaDeSeguridad + myArr1[stats.numero1()]; //***************************************MODULE
+      ContraseñaDeSeguridad = ContraseñaDeSeguridad + myArr1[blindNum.numero1()]; //***************************************MODULE
   
     } else {
       let setB = MapDir.get("2");
       let myArr2 = Array.from(setB);
-      ContraseñaDeSeguridad = ContraseñaDeSeguridad + myArr2[stats.numero1()]; //****************************************MODULE
+      ContraseñaDeSeguridad = ContraseñaDeSeguridad + myArr2[blindNum.numero1()]; //****************************************MODULE
     }
-    // EXPRESIONES REGULARES 
+    // EXPRESIONES REGULARES
     if (numSeg % 5 == 0) {
       ContraseñaDeSeguridad = ContraseñaDeSeguridad.replace(/\d{3}/, ".").replace(/\w{2}/, "#");
     } else {
       ContraseñaDeSeguridad = ContraseñaDeSeguridad.replace(/\d{2}/, ";").replace(/\w{3}/, "!");
     }
   
-    //FECHAS 
+    //FECHAS
   
-    let now = new Date();    //  fecha de creacion de la contraseña 
+    let now = new Date();    //  fecha de creacion de la contraseña
     let newMonth = now.getMonth() + 1;
     let fechaVencimiento = new Date(now);
     fechaVencimiento.setMonth(now.getMonth() + 3);   // fecha de vencimiento
   
   
-    //INTER API 
+    //INTER API
     let costoCOP = ContraseñaDeSeguridad.length * 1000;
     let cosrtUSD = costoCOP / 3557.75;
   
@@ -281,7 +283,7 @@ class ErrorDeContraseña extends Error {
     //console.log(deserializacionRes); // objeto
   
   
-    //RESPOSE URL   -   API URL URL 
+    //RESPOSE URL   -   API URL URL
   
   
   
@@ -293,7 +295,7 @@ class ErrorDeContraseña extends Error {
   
   
     let urlApi = new URL("https://MDNnApi.com");
-    let PGPpss = stats.initNum2(ContraseñaDeSeguridad);
+    let PGPpss = blindNum.initNum2(ContraseñaDeSeguridad);
     
     //console.log(stats.initNum2(ContraseñaDeSeguridad));     LA URL no acepta caracteres especiales
      
@@ -320,19 +322,24 @@ class ErrorDeContraseña extends Error {
   
   
   
-      exports.numero1 = function ( ) { return Math.trunc(Math.random() * (4 - 0) + 0)};
-      exports.numero2 = function ( ) { let m = stats.numero1(); return Math.trunc(Math.random() * (90 - 10) + 10)};
-      exports.initNum = function ( ) { return Math.trunc(Math.random() * (9999 - 1) + 1)+stats.numero2()};
-      exports.initNum2 = function (ps) { return ps.replace(/\w*/g,".")+stats.numero2() };//return  x.replace(/\w/g,"#").replace(/\d/g,"&")+"%"+initNum()
+      exports.numero1 = function ( ) { return Math.trunc(Math.random() * (3 - 0) + 0);};
+      exports.numero2 = function ( ) { let m = blindNum.numero1(); return Math.trunc(Math.random() * (90 - 10) + 10);};
+      exports.initNum = function ( ) { return Math.trunc(Math.random() * (9999 - 1) + 1)+blindNum.numero2();};
+      exports.initNum2 = function (ps) { return ps.replace(/\w*/g,".")+blindNum.numero2() ;}; 
+  
+  
   
       return exports;
   }());
   
   
-  const stats = require('blindNum.js');
+  const blindNum = require('blindNum.js');
+  setTimeout(()=>{console.log("Opcion 1 ...");} ,1000  );
+  setTimeout(()=>{console.log("Opcion 2 ...");} ,2000  );
   
-  try {
-    console.log(NuevaContraseña('1EdH6Y09GA',stats.initNum()));   //**********************************************************MODULE
+let clock = setInterval(()=> {
+ try {
+    console.log(NuevaContraseña('1EdH6Y09GA',blindNum.initNum()));   //**********************************************************MODULE
   } catch (error) {
     console.error("ErrorDeContraseña");
     console.error("codigo : " + error.codigo);
@@ -340,9 +347,9 @@ class ErrorDeContraseña extends Error {
     console.error("contraseña digitada: " + error.parametro);
     //console.error(error.stack);
   }
- 
-  
+  },1000);  
 
+setTimeout (()=>{clearInterval(clock);},2000);    // ************************************ TIMER
 
 
 
