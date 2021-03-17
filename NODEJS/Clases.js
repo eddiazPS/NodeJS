@@ -211,7 +211,43 @@ console.log(par9.ml);
 
 
 
+//##################################################################################################################################################
+//##################################################################################################################################################
+//################################################################## METODOS ESTATICOS ##########################################################################
+//##################################################################################################################################################
+//##################################################################################################################################################
+//##################################################################################################################################################
 
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+class   Cuadrado1 { 
+    static calcularCuadrado (num){
+        return num *  num;
+    }
+    static texto ="Hola";
+     #propiedadPrivada = 0;  //variable privada ->#
+
+    metodoAbstracto (){  //clase que lo extiende lo define
+        throw new Error ("Metodo abstracto"); //
+    }
+}
+
+let cuadrado3 =   Cuadrado1.calcularCuadrado(7) ;  // hacemos el llamado a la funcion estatica calcularCuadrado(7); no se instancia para acceder. 
+console.log(cuadrado3 );
+
+let cuadrado4 =   Cuadrado1.texto ; //accedemos a la variable estatica texto;  no instanciamos para ver su valor 
+console.log(cuadrado4 );
+
+let cuadrado5 = new Cuadrado1(); // llamamos a la propiedad privada propiedadPrivada la cual es propia de la clase; genera error de definicion 
+console.log(cuadrado5.propiedadPrivada );
 
 
 
