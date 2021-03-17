@@ -39,16 +39,10 @@
  * 
  * 
  */
-
-
-
-
-
- 
 const statsIni = (function() {
 
     const sum =(x,y) => x+y;
-    const square =(x)= x => x*x;
+     const square =(x)  => x*x;
     function mean (data){
      return data.reduce (sum)/ data.length;
       };
@@ -57,26 +51,16 @@ const statsIni = (function() {
      return Math.sqrt (
       data.map(x=>x-m).map(square).reduce(sum)/(data.length-1)
 );
-
   }
-
 return {
    mean ,
    stdDev,
    sum
 }
-
 }() );
-
-
-
-
 console.log (statsIni.mean ([1,3,5,7,9]));
 console.log (statsIni.stdDev ([1,3,5,9]));
 console.log(statsIni.sum(1,3));
-
- 
-
 // -------------------------
 
  
@@ -102,15 +86,15 @@ console.log (calculadoraInit.restar(2,4));
 console.log (calculadoraInit.multiplicar(2,4));
 
 
-/*
+ 
 
-const modules = {};
+const modulesq = {};
 
-function require(moduleName) {
-    return modules[moduleName];
+function require1(moduleName) {
+    return modulesq[moduleName];
 }
 
-modules['stats.js'] = (function () {
+modulesq ['stats.js'] = (function () {
     const exports = {};
 
     const sum = (x, y) => x + y;
@@ -131,7 +115,7 @@ modules['stats.js'] = (function () {
 }());
 
 
-modules['calculadora.js'] = (function () {
+modulesq ['calculadora.js'] = (function () {
 
     const exports = {};
 
@@ -145,17 +129,199 @@ modules['calculadora.js'] = (function () {
 }());
 
 
-const stats = require('stats.js');
+const stats = require1('stats.js');
 console.log(stats.mean([1,2,3,9]));
 //console.log(stats.stdDev([1,2,4,5,6]));
 
-const calculadora = require('calculadora.js');
+const calculadora = require1('calculadora.js');
 console.log(calculadora.sumar(1,4));
+ 
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//********************************************* MODULOS EN ES6 ***************************************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+/**
+ * Modulos en ES6   EmaScript6    -> todos los navegadores menos   internet Explorer tienen las catualizaciones de ES6
+ * palabra reserva Export
+ * 
+ * los modulos en ES6 son oficiales para la mayoria de navegadores menos internet explorer, los modulos en ES6 cada archivo tienen su contexto privado y se puede usar las declaraciones de importacion y exportacion, y por ultimo los modulos estan en modo extricto 
+ *  
+ */
+
+
+export const PI1 = Math.PI;   // constante 
+export function gradosAradianes1 (grados) {
+  return grados * PI1/180;
+}
+export class Circle1 {
+constructor (radio){
+  this.radio = radio;
+}
+ area (){
+  return Math.PI1* this.radio * this.radio;
+ }
+}
+
+// segunada alternativa para exportar 
+
+  const PI = Math.PI;   // constante 
+  function gradosAradianes (grados) {
+  return grados * PI/180;
+}
+class Circle {
+ constructor (radio){
+    this.radio = radio;
+ }
+ area (){
+  return Math.PI* this.radio * this.radio;
+ }
+}
+ // export es como un public en JAVA 
+export {PI, gradosAradianes, Circle}
+
+// en el caso de querer exportar un solo elemento utilizamos : lapalabra default funciona igual para funciones constantes, un default por modulo-> archivo como tal 
+// la palabra clave export debe aparecer en el nivel superior de nuestro codigo JavaScript, no se puede usar dentro de una clase, dentro de un ciclo dentro de una funcion if
+
+export default class Bitset {   } 
+ //default se entiende que de todo el modulo se va a exportar esto , solo exportar una sola cosa
+
+
+/*******************************************************************************************************************************
+ * ****************************************IMPORT * EXPORT *********************************************************************
+ * ***************************************************************************************************************************** 
+ * import:  La palabra clave import importa los elementos exportados de los modulos 
+ * 
+ * 
 */
+
+
+import BitSet1 from './calculadora.js';   // elemento exportados con default 
+
+//import BitSet from './bitset.js'; 
+
+
+//para poder importar un modulo con varios elementos 
+
+
+import { mean , stdDev } from './stats.js';
+import { multiplicar , dividir } from './calculadora.js';
+
+/**
+ * cosas importante para tener en cuenta , 
+ * 1) las importaciones lo mismo que las exportaciones deven aparecer en el nivel superior. dentra de nada .
+ * 2) por convencion las importaciones se colocan al inicio del modulo
+ * 3) la comillas para la ruta del modulo ' "   pero `  no esta permitida
+ * 4) para el directorio actual ./   o  .. /  anterior   o ruta absoluta  
+ *  */ 
+ 
+ //import * as stats from './bitset.js';// importa los elementos de un modulo 
+ import * as statsImp from './calculadora.js';//
+
+
+ statsImp.multiplicar(2,3);  //llamadp
+
+/**
+ * 
+ * import para casos especiales en los que tenga un export default y otras exportaciones 
+ * 
+ * bistase.js   tenga default y otros elementos exportados 
+ * 
+ */
+
+ import BitSet, {otroElementoExportado,otroSegundoElementoExportado} from './bitset.js';
+ import BitSet, {otroElementoExportado,otroSegundoElementoExportado} from './calculadora.js';
+
+ 
+
+ //archivo , modulo si export se importa asi:
+ import './ArchivoSinExports.js';
+
+console.log("hola");
+
+
+
+/**
+ * RENOMBRADO 
+ * Importaciones exportaciones con el cambio de nombre 
+ * util: modulos con elementos exportados con nombres iguales
+ *  
+ */
+
+import { mean , stdDev } from './stats.js';
+import { mean as meanOther , stdDev2 } from './OtherStats.js';
+
+import {default as BitSet2 }    from "./bitst.js"     // importa renobrado para los defaults
+
+
+/*tener encuenta con los exports 
+ * 1 expreciones, por ejemplo Marh.cos   as   ....   no se permite dentro del export
+*/
+
+
+//RENOMBRADO EN LOS EXPORTS
+
+export { PI_2 as NumeroPi , convertirGradosAradianes2 as convertir, Circle2 as Circulo  };
+export { 
+   PI_2 as NumeroPi ,
+   convertirGradosAradianes2 as convertir,
+   Circle2 as Circulo  
+  };
+
+/**
+ *
+ * Re-exports : re Exportaciones
+ *
+ * unir dos modulos en uno solo  
+ * Re-export desde nuevo archivo stat.js 
+ */
+//_________________________________________________________
+import { mean } from "./stats/mean.js";
+import { stdDev } from "./stats/stdDev.js";
+
+// Re-export desde un nuevo archivo
+export {mean, stdDev };  
+//_________________________________________________________
+// Re-export desde los imports
+export {mean} from '/stats/mean.js'
+export {stdDev} from '/stats/stdDev.js'
+//________________________________________________________
+// Re-export de todos los elementos desde los imports
+export * from '/stats/mean.js'
+export * from '/stats/stdDev.js'
+
+
+//RE-NOMBRADO DE LOS REEXPORTS 
+// importar modulos re-exportados y renombrar 
+import{mean,stdDev } from './stat.js';
+import{mean as meanOther, stdDev } from './stat.js';
+
+ 
+
+
+// Re-exportar elementos default 
+export {default as mean } from 'stats/mean.js';
+export {default as stdDev  } from 'stats/stdDev.js';
+
+//default un elemento es la mas rapida
+// si hacemos muchos re-exports el programa se vuelve un espaqueti
+//import { multiplicar , dividir } from './calculadora.js';
+
+
+
+
+
+
+
+
+
+
+
 
 //****************************************************************************************************************************
 //****************************************************************************************************************************
-//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY********************************************
+//********************************************* EJERCICIO  CON JAVA STANDAR LIBRAY* 16/03/2021********************************
 //****************************************************************************************************************************
 //****************************************************************************************************************************
  
@@ -280,5 +446,17 @@ try {
 },1000);  
 
 setTimeout (()=>{clearInterval(clock);},2000);    // ************************************ TIMER
+
+
+
+
+
+
+
+
+
+
+
+
 
 
