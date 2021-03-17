@@ -1118,12 +1118,12 @@ setTimeout(()=>{console.log("Go...");} ,3000  );
 
 // señales de vida aplicacion este bien cada sierto tiempo se le hace una peticion para comprobar si esta viva 
 
-let clock = setInterval(()=> {
+let clock1 = setInterval(()=> {
   //console.clear();
   console.log(new Date().toLocaleTimeString());},
   1000); // 1000ms -> 1s 
 
-setTimeout (()=>{clearInterval(clock);},10000);
+setTimeout (()=>{clearInterval(clock1);},10000);
 
 
 
@@ -1163,16 +1163,17 @@ function NuevaContraseña(newpss, numSeg) {
 
 
   // EXCEPCIONES
-  if (newpss.length < 6) throw new ErrorDeContraseña(-2, "la contraseña ninimo tiene que tener 6 caracters", newpss);
-  if (newpss.length > 10) throw new ErrorDeContraseña(-3, "la contraseña naximo tiene que tener 10 caracters", newpss);
+  if (newpss.length < 6) throw new ErrorDeContraseña(-2, "El String de entrada, ninimo tiene que tener 6 caracters", newpss);
+  if (newpss.length > 10) throw new ErrorDeContraseña(-3, "El String de entrada, maximo tiene que tener 10 caracters", newpss);
   ContraseñaDeSeguridad = newpss;
 
   if (numSeg == null) throw new ErrorDeContraseña(-4, "el numero de seguridad es obligatorio", newpss);
   // ARRAYS TIPO
 
   let more = new Uint8Array([12 * numSeg, 234 / numSeg, 45 - numSeg]);
-  let sumTipo = more[0] + more[1] + more[2] + blindNum.numero2();  //***************************************MODULE
-
+  const reducer = (accumulator, currentValue) => accumulator + currentValue+ blindNum.numero2();  //***************************************MODULE
+  
+   let sumTipo = more.reduce (reducer);
   ContraseñaDeSeguridad = ContraseñaDeSeguridad + sumTipo;
 
 
@@ -1272,11 +1273,11 @@ function NuevaContraseña(newpss, numSeg) {
   let urlApi = new URL("https://MDNnApi.com");
   let PGPpss = blindNum.initNum2(ContraseñaDeSeguridad);
   
-  //console.log(stats.initNum2(ContraseñaDeSeguridad));     LA URL no acepta caracteres especiales
+ 
    
   urlApi.searchParams.append("Historial",user);
   urlApi.searchParams.append("pssEncrip",PGPpss);
-  urlApi.searchParams.append("Costo",indi);
+ // urlApi.searchParams.append("Costo",indi);    LA URL no acepta caracteres especiales
    urlApi.search;
 
 
@@ -1314,7 +1315,7 @@ setTimeout(()=>{console.log("Opcion 2 ...");} ,2000  );
 
 let clock = setInterval(()=> {
 try {
-  console.log(NuevaContraseña('1EdH6Y09GA',blindNum.initNum()));   //**********************************************************MODULE
+  console.log(NuevaContraseña('EdH.Yiopol',blindNum.initNum()));   //**********************************************************MODULE
 } catch (error) {
   console.error("ErrorDeContraseña");
   console.error("codigo : " + error.codigo);
