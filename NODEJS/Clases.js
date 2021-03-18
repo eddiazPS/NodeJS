@@ -252,3 +252,4 @@ console.log(cuadrado5.propiedadPrivada );
 
 
 
+//prohibir de agregar métodos de forma dinámica, esto es una mala practica
