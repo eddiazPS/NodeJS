@@ -18,7 +18,7 @@
 
 var arr =   [22];
  
-function MaxMin(arr) {
+function minMax(arr) {
   var length = arr.length;
   let ma = 0 ;
   let mi = 0 ; 
@@ -32,9 +32,9 @@ function MaxMin(arr) {
     return  [mi,ma];
   } 
    
-  return  "no"//[arr[0],arr[0]]
+  return  "No Contemplado" 
 }
-console.log(MaxMin(arr));
+console.log(minMax(arr));
 
 
 
@@ -57,17 +57,15 @@ console.log(MaxMin(arr));
  * 
  * 
  * 
- * } str 
+ *   
  */
-
 
 const redundant = (function(x){
     return function f1(){
         return x;
     };
-}("apple"));
+});
 
-console.log(redundant());
 
 
 
@@ -91,13 +89,11 @@ console.log(redundant());
 
 // Derivada de una función f(x) = x^b
 
-const derivada = (b, m) => {
+const derivative = (b, m) => {
     return b * Math.pow(m, b - 1);
 };
 
-console.log(derivada(1));
-console.log(derivada(3, -2));
-console.log(derivada(4, -3));
+
 
 
 
@@ -143,9 +139,7 @@ const oddishOrEvenish = number => {
     return "Oddish";
 }
 
-console.log(oddishOrEvenish(43));
-console.log(oddishOrEvenish(373));
-console.log(oddishOrEvenish(4433));
+
 
 
 
