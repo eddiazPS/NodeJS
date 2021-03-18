@@ -65,10 +65,7 @@ const redundant = (function(x){
     return function f1(){
         return x;
     };
-}("apple"));
-
-console.log(redundant());
-
+});
 
 
 //-----------------------------------------------------------------------------------
