@@ -239,7 +239,7 @@ comprar ();
 /**
  * 
  * Animacion :  LOS PASOS DEL HOMBRE INVISIBLE - NO LO HAN PODIDO PARAR
- * por: @Edmh
+ * por: @Ehdm
  *  
  */
 
