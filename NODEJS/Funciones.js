@@ -24,7 +24,7 @@
 
 //Declaracion de funcion 
 
-console.log(factorial(24));  // console.log(factorial(24))  la expresión de función solamente existen cuando se hace la expresión no se puede usar antes 
+console.log(factorial(24));  //   la expresión de función solamente existen cuando se hace la expresión no se puede usar antes 
 
 function factorial(x){
     if (x<=1){
@@ -37,6 +37,8 @@ console.log(factorial(24));
 
 
 //Expresion de funcion , variable Js dentro de la misma funcion , siempre hacerla con const 
+
+
 const factorial1 = function factorial1 (x){
     if (x<=1){
         return 1;
@@ -53,11 +55,12 @@ const cuadrado = function (x){
     return x*x;
 }
 
-console.log(cuadrado(7));
+console.log(cuadrado(3));
 
 
 //expresion que se autoinvoque 
 
+ 
 let cuadradoV2 = (function(x){
     return x*x;
 }(8));
@@ -88,5 +91,6 @@ console.log(devolverConstante());
  * -tester: Gustavo
  * 
  */
+
 
 

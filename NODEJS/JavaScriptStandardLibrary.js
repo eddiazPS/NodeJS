@@ -1103,7 +1103,7 @@ console.log(url5.search);
  * son funciones llamadas call back set timeOut set interval 
  * 
  * 
- * sistema operativo invoca cierto codigo , invocar la funcion cada sierto tiempo , funciona en todos los navegadores ,
+ * sistema operativo invoca sierto codigo , invocar la funcion cada sierto tiempo , funciona en todos los navegadores ,
  * 
  * 
  * Callback pasar una funcion como argumento 

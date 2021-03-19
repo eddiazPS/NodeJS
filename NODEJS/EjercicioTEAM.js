@@ -1,6 +1,5 @@
 
-
-
+//Edabit.com
 /**
  * 
  * Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
@@ -60,13 +59,13 @@ console.log(minMax(arr));
  *   
  */
 
-const redundant = (function(x){
+const redundant = (function  (x){
     return function f1(){
         return x;
     };
-});
+}("hola"));
 
-
+console.log(redundant("a pple"));
 
 
 //-----------------------------------------------------------------------------------
@@ -93,7 +92,7 @@ const derivative = (b, m) => {
     return b * Math.pow(m, b - 1);
 };
 
-
+console.log (derivative(4,5));
 
 
 
@@ -140,8 +139,13 @@ const oddishOrEvenish = number => {
 }
 
 
+console.log(oddishOrEvenish(3456)); 
 
 
 
 
 
+
+//definir bien la carga que se pude realizar 
+//lider de cada equipo balanceador de carga al lider 
+// primero hacer lo suficiente 
