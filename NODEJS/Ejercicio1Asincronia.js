@@ -1,5 +1,5 @@
 /**
- * 
+ * : https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=768s    12:49
  * Animacion :  LOS PASOS DEL HOMBRE INVISIBLE - NO LO HAN PODIDO PARAR
  * por: @Ehdm
  *  
@@ -22,7 +22,7 @@ let clock = setInterval(()=> {
   },2500);  
 setTimeout (()=>{clearInterval(clock);},5000);
     console.log("             Å Å Å Å Å Å Å LOS PASOS DEL HOMBRE INVISIBLE - NO LO HAN PODIDO PARAR Å Å Å Å Å Å  ");   // Tiempo = 0,01
-    sleep(700);
+    sleep(300);
     [1,2,3].forEach(function (i){
     console.log("           W#################################################################################W "+[i]);
 });
@@ -35,7 +35,7 @@ setTimeout(function cb(){
     
 },1000);
 setTimeout(function cb(){
-    console.log("                                         o  ");
+    console.log("                                          o  ");
         },2000);
         setTimeout(function cb(){          
 console.log("                                                   o  ");

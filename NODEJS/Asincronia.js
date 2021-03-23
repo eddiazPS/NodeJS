@@ -303,4 +303,18 @@ console.log("                                                         O  ");
 
 
 
+function asyncForEach (array,cb){
+        array.forEach(function (){
+            setTimeout(cb,1000);
+    })
+}
+
+
+
+asyncForEach ([1,2,3,4],function (x){
+console.log ("proceso async " );
+//delay();
+})
+
+
 
