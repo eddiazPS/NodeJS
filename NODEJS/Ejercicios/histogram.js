@@ -96,13 +96,13 @@ class Histogram {
 
 
 
-async function histogramFromStdin(){                              //  funcion que orquesta el codigo  
+async function histogramFromStdin(){                              //  funcion  importante que orquesta el codigo  
 
 	process.stdin.setEncoding("UTF-8");
 
 	let histogram = new Histogram();
 
-	for await(let chunk of process.stdin){                          // await   no lo he usado 
+	for await(let chunk of process.stdin){                          // await   pausa la ejecucion de la funcion async y espera la resolucion de la promesa peasada, depues reanuda la ejecucion de la funcion asinc y devuelve el valor resuelto. 
 
 		histogram.add(chunk);
 
@@ -114,7 +114,7 @@ async function histogramFromStdin(){                              //  funcion qu
 
 
 
-histogramFromStdin().then(histogram =>{                           // imprimimos en consola 
+histogramFromStdin().then(histogram =>{                           // llamado de la funcion asincrona inicio y ejecucion del codigo , imprimimos en consola 
 
 	console.log(histogram.toString());
 
