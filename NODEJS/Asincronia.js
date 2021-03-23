@@ -270,8 +270,8 @@ comprar ();
 
 
 // EJERCICIO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/**
+//https://youtu.be/8aGhZQkoFbQ?t=768
+/**https://github.com/latentflip/loupe
  * 
  * Animacion :  LOS PASOS DEL HOMBRE INVISIBLE - NO LO HAN PODIDO PARAR
  * por: @Ehdm
