@@ -1,19 +1,17 @@
 
 /**
  * https://v8.dev/
- * 
  * encargado de que se imterprete el lenguaje en el navegador MOTOR DE JAVA SCRIPT  de google chrome   
  * 
  * 
  * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
- * 
  * motor de  morzilla    Spider Monkey
  * cd
  * 
- * node Js   corre en un sistema operativo 
+ * node Js   corre en sistema operativo 
  * 
  * 
- * entorno para secribir ser. web concurrentes  en un solo hilo 
+ * entorno para escribir en seridores web concurrentes  en un solo hilo 
  * 
  * * ejecutar el archivo 
  * node .\Node.js
@@ -51,7 +49,7 @@ console.log(process.argv);
  * tipo de datos que nos ayuda a leer datos de archivos o de la red.
  *  es una secuencia de bytes en lugar de una secuencia de caracteres. Buffer es una subclase Uint8Array. 
  *  Buffer esta diseñado para operar con cadenas de JavaScript, esto significa que se puden inicializar a partir de cadenas de caracres o 
- * cpnvertirce a cadenas de carcteres.
+ * convertirce a cadenas de carcteres.
  * 
  * Caracteristicas del buffer:
  * 1- Asigna a cada caracter un numero entero 
@@ -180,3 +178,294 @@ const os = require ('os');
 console.log(os.arch());
 console.log(os.cpus());
 console.log(os.type());  // tipo sistema operativo
+
+
+
+ 
+
+console.log("####### PROCESS ###########");
+console.log(process.argv); // Una matriz de argumentos de la línea de comandos.
+console.log(process.arch); // La arquitectura de la CPU: "x64", por ejemplo.
+console.log(process.cwd()); // Devuelve el directorio de trabajo actual.
+console.log(process.chdir(".")); // Establece el directorio de trabajo actual.
+console.log(process.cpuUsage ()); // Informa el uso de la CPU.
+console.log(process.env); // Un objeto de variables de entorno.
+console.log(process.execPath); // La ruta absoluta del sistema de archivos al ejecutable del nodo.
+console.log(process.exit ()); // Termina el programa.
+console.log(process.exitCode); // Un código entero que se informará cuando se cierre el programa.
+console.log(process.getuid ); // Devuelve el ID de usuario de Unix del usuario actual.
+console.log(process.hrtime.bigint ()); // Devuelve una marca de tiempo de nanosegundos de "alta resolución".
+//console.log(process.kill ()); // Envía una señal a otro proceso.
+//console.log(process.memoryUsage ()); // Devuelve un objeto con detalles de uso de memoria.
+///**/console.log(process.nextTick ()); // Como setImmediate (), invoca una función pronto.
+console.log(process.pid); // El ID de proceso del proceso actual.
+console.log(process.ppid); // El ID del proceso padre.
+console.log(process.platform); // El sistema operativo: "linux", "darwin" o "win32", por ejemplo.
+console.log(process.resourceUsage ()); // Devuelve un objeto con detalles de uso de recursos.
+//console.log(process.setuid ()); // Establece el usuario actual, por id o nombre.
+console.log(process.title); // El nombre del proceso que aparece en los listados `ps`.
+//console.log(process.umask ()); // Establece o devuelve los permisos predeterminados para nuevos archivos.
+console.log(process.uptime ()); // Devuelve el tiempo de actividad de Node en segundos.
+console.log(process.version); // Cadena de versión de Node
+console.log(process.versions); // Cadenas de versión para las bibliotecas de las que depende Node.
+
+console.log("####### OS ###########");
+console.log(os.arch()); // Devuelve la arquitectura de la CPU. "x64" o "arm", por ejemplo.
+console.log(os.constants); // Constantes útiles como os.constants.signals.SIGINT.
+    console.log(os.cpus()); // Datos sobre los núcleos de la CPU del sistema, incluidos los tiempos de uso.
+    console.log(os.endianness()); // El endianness nativo de la CPU "BE" o "LE".
+    console.log(os.EOL); // El terminador de línea nativo del sistema operativo: "\ n" o "\ r \ n".
+    console.log(os.freemem()); // Devuelve la cantidad de RAM libre en bytes.
+    console.log(os.getPriority()); // Devuelve la prioridad de programación del sistema operativo de un proceso.
+    console.log(os.homedir()); // Devuelve el directorio de inicio del usuario actual.
+    console.log(os.hostname()); // Devuelve el nombre de host de la computadora.
+    console.log(os.loadavg() );// Devuelve los promedios de carga de 1, 5 y 15 minutos.
+    console.log(os.networkInterfaces ()); // Devuelve detalles sobre la red disponible. conexiones.
+    console.log(os.platform()); // Devuelve OS: "linux", "darwin" o "win32", por ejemplo.
+    console.log(os.release() );// Devuelve el número de versión del SO.
+    //console.log(os.setPriority()); // Intenta establecer la prioridad de programación para un proceso.
+    console.log(os.tmpdir()); // Devuelve el directorio temporal predeterminado.
+    console.log(os.totalmem()); // Devuelve la cantidad total de RAM en bytes.
+    console.log(os.type()); // Devuelve SO: "Linux", "Darwin" o "Windows_NT", p. ej.
+    console.log(os.uptime()); // Devuelve el tiempo de actividad del sistema en segundos.
+    console.log(os.userInfo()); // Devuelve uid, nombre de usuario, inicio y shell del usuario actual.
+
+
+
+
+
+
+/** 
+ * Manejo de archivos  MODULO  fs    ->  File Sistem 
+ * 
+ * Api para trabajar con archivos y directorios 
+ * fs.readfile()->fs.readFileSync()
+ * fs.Promises.readFile() despues de la version 10 denode
+ * 
+ * PATHS
+ * estudiaremos las rutas  Paths
+ * 
+ */
+const path = require ("path");
+console.log(path.sep);  // el / o \ de la ruta segun el sistema operativo 
+let directorio = "src/pkg/test.js"
+console.log(path.basename(directorio));
+
+
+console.log(process.cwd)
+console.log(__filename); // ruta absoluta actual del archivo que contiene el codigo actual es decir Node.js
+console.log (__dirname);// ruta del directorio actualque contiene el file name
+console.log(os.homedir()); // Devuelve el directorio de inicio del usuario actual.
+console.log(path.extname(directorio));
+console.log(path.dirname(directorio));
+console.log(path.basename(path.dirname(directorio)));
+
+// Normalize
+
+console.log(path.normalize("a/b/c/../d/"));
+
+console.log(path.normalize("a/./b"));
+    console.log(path.normalize("//a//b//"));
+
+// Joins 
+
+console.log(path.join("src","pkg","y.js"));
+
+//resolve
+
+console.log(path.resolve()); // simialr aprocess cwd()
+console.log(path.resolve("t.js")); // es igual a path.join (process.cwd(),"t.js") 
+console.log(path.resolve("/tmp","t.js"));
+console.log(path.resolve("/a","/b","t.js"));
+
+console.log(path.posix); // linux 
+
+
+// preguntar si el sistema es linux o windows   los comandos cambian 
+// contenedores siempre estaran bajo linux
+
+
+
+
+
+/**
+ * 
+ * LECTURA DE ARCHIVOS 
+ * 
+ */
+
+
+const fs2 = require ('fs');
+
+let buffer2 = fs2.readFileSync(path.join(__dirname,"fs.txt"));
+console.log(buffer2);
+
+let text = fs2.readFileSync(path.join(__dirname,"fs.txt"),"utf-8");
+console.log(text);
+
+// lectura de forma asincrona con callbacks  
+fs2.readFile(path.join(__dirname,"fs.txt"),(err,buffer)=> {
+if(err){
+console.log(`Error ${err}`);
+}else{
+console.log(` ok ${buffer}`);
+}
+});
+
+// lectura con promesas 
+
+
+fs.promises.readFile(path.join(__dirname,"fs.txt"),"utf-8").then(processFileText => {
+    console.log(processFileText);
+}).catch(handleReadError => {
+     console.log(handleReadError)
+});
+
+
+
+//  Async Await 
+
+async function processTest (fileName , encoding="utf-8"){
+let test2 = await fs2.promises.readFile (fileName,encoding);
+console.log(test2);
+}
+
+processTest(path.join(__dirname,"fs.txt"));
+
+
+
+
+/**
+ * DESCRIPTORES
+ * Salida estandar a nivel de contenedores 
+ * 
+ * No usar  archivos para poner logs en un contenedor use log4J
+ * 
+ * salida estandar
+ * stdOut
+ * 
+ * Herramientas de monitoreo
+ * Kibana
+ * Cloud Trail
+ * Grafana      https://hub.docker.com/r/grafana/grafana
+ * Prometheus   https://hub.docker.com/r/prom/prometheus
+ */
+
+
+
+function printFile(fileName,encoding ="utf8"){
+fs.createReadStream(fileName,encoding).pipe(process.stdout);
+}
+printFile(path.join(__dirname,"fs.txt"));
+
+
+//esribir archivos 
+
+//sincrona - "configuracion.json"
+
+let configuracion = {nombre: "juan",apellido : "Perez" };
+
+fs.writeFileSync(path.resolve(__dirname,"configuracion.json"),JSON.stringify(configuracion));
+
+
+//asincrona con callback  - "configuracion2.json"
+fs.writeFile(path.resolve(__dirname,"configuracion2.json"), JSON.stringify(configuracion), err =>{
+    if (err){
+        console.log(err);
+     }else{
+        console.log("El archivo ha sido escrito exitosamente ");
+     }
+});
+
+
+
+//agregar al final del archivo de forma asincrona con callback
+fs.appendFile(path.resolve(__dirname,"configuracion.json"), " 1) fs.appendFile - asincrono con callback" , err=>{
+ if (err){
+    console.log(err);
+ }else{
+     let configuracionTest = fs.readFileSync(path.resolve(__dirname,"configuracion.json"),"utf8");
+     console.log(configuracionTest);
+ }
+});
+
+//tarea
+// fs.appendFileSync
+fs.appendFileSync(path.resolve(__dirname,"configuracion.json"), " 2)  appendFileSync " ,err=>{
+    if (err){
+       console.log(err);
+    }else{
+        console.log("si");
+        let configuracionTest2 = fs.readFileSync(path.resolve(__dirname,"configuracion.json"),"utf8");
+        console.log(configuracionTest2);
+    }
+   });
+ 
+
+// fs.promises.appendFile
+fs.promises.appendFile(path.join(__dirname,"configuracion.json")," 3) fs.promises.appendFile").then(() => {
+    console.log("Archivo modificado");
+}).catch(handleReadError => {
+     console.log(handleReadError)
+});
+
+
+
+// fs.write con Asyn await y promises 
+// regla: simpre debe colar en un try catch 
+let data = "async function promises.writeFile";
+
+
+
+
+async function writeProcessTest (fileName ,datos, encoding="utf-8"){
+    try {
+        let test2 = await fs2.promises.writeFile (fileName,datos,encoding);
+        console.log(test2);
+    } catch (error) {
+        console.log(error);
+    }
+}
+    
+    writeProcessTest(path.join(__dirname,"fs.txt"),data);
+
+
+/**
+ * 
+ * se debe usar sincrono cuando el archivo es pequeño muchos recursos en el servidor 
+ * se debe usar asincrono cuando el archivo   es grande y pocos recursos en el servidor 
+ * elegir callbacks promesas  o async await(epera)  
+ * 
+ */
+
+
+
+ /**
+  * METADATOS DE LOS ARCHIVOS 
+  * 
+  * 
+  */
+let stats = fs.statSync(path.join(__dirname,"fs.txt"));
+
+console.log(stats.isFile());
+console.log(stats.isDirectory());
+console.log(stats.size);  // tamaño en bytes
+console.log(stats.atime);//accesTime  fecha ultima vez que fue leido
+console.log(stats.mtime);//modification time 
+console.log(stats.uid);// retoran id dueño del archivo
+console.log(stats.gid);/// retorna id grupo dueño del archivo
+console.log(stats.mode.toString(8)); // imprime octal en string de los permisos del archivo
+
+/**copia de archivos */
+
+fs.copyFileSync(path.join(__dirname,"Original.txt"),path.join(__dirname,"OrigCopy2.txt"));
+
+let output = fs.createWriteStream( path.join(__dirname,"fs.txt") ); 
+for (let i = 0; i <= 100; i++) {
+    output.write(`${i} \n`);
+    
+}
+console.log(output.end);
+
+
+console.log("*************************NODE.JS*********************************");

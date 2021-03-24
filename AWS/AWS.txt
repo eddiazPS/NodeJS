@@ -6,8 +6,12 @@ EC2
 
 Balanceador de Carga
 
+Dynamo
+
 Lambda
 
 API . VPC
 
-H O L
+
+enable CORS
+https://medium.com/@peorth/using-jquery-to-access-a-aws-api-gateway-cors-afa11fd27f2a
