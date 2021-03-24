@@ -197,7 +197,7 @@ los elementos de una matriz con tipo siempre se inicializan a creo cuando se cre
 */
 
 
-let bytes = new  Uint8Array (1024); // 1024 bytes  - si se pasa las gurda 
+let bytes = new  Uint8Array (1024); // 1024 bytes  - si se pasa las guarda 
 let matrix = new Float64Array(9); // matriz 3x3
 let point = new Int16Array(3);  // un punto en un espacio de 3d 
 let rgba = new Uint8ClampedArray(4);// un valor de pixel rgba de 4 bytes  - no lodeja salir de ese rango

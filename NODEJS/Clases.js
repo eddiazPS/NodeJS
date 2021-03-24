@@ -95,7 +95,7 @@ class Span extends Range1{
         if(length>=0 ){
             super(start,start+length);
         }else {
-            super(starts+length,start);
+            super(start+length,start);
         }
     }
 }
@@ -107,7 +107,7 @@ console.log(spam2.toString())
 
 
 
-// Funcion como exprecion 
+// Funcion como expresion 
 
 let square = function(x){
     return x*x;
@@ -116,7 +116,7 @@ let square = function(x){
 console.log(square(6));
 
 
-//clase como exprecion 
+//clase como expresion 
 
 let Square = class {
     constructor(x){
