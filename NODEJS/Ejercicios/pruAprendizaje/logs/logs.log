@@ -1,0 +1,40 @@
+{"level":30,"time":1616711867348,"pid":7260,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616711904615,"pid":7260,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711904616,"pid":7260,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711904620,"pid":7260,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.472499966621399,"msg":"request completed"}
+{"level":30,"time":1616711905763,"pid":7260,"hostname":"PSLT6227","reqId":"req-2","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711905767,"pid":7260,"hostname":"PSLT6227","reqId":"req-2","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711905767,"pid":7260,"hostname":"PSLT6227","reqId":"req-2","res":{"statusCode":200},"responseTime":0.5009000301361084,"msg":"request completed"}
+{"level":30,"time":1616711906411,"pid":7260,"hostname":"PSLT6227","reqId":"req-3","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711906411,"pid":7260,"hostname":"PSLT6227","reqId":"req-3","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711906412,"pid":7260,"hostname":"PSLT6227","reqId":"req-3","res":{"statusCode":200},"responseTime":0.26179999113082886,"msg":"request completed"}
+{"level":30,"time":1616711906811,"pid":7260,"hostname":"PSLT6227","reqId":"req-4","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711906811,"pid":7260,"hostname":"PSLT6227","reqId":"req-4","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711906811,"pid":7260,"hostname":"PSLT6227","reqId":"req-4","res":{"statusCode":200},"responseTime":0.24950003623962402,"msg":"request completed"}
+{"level":30,"time":1616711907067,"pid":7260,"hostname":"PSLT6227","reqId":"req-5","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711907067,"pid":7260,"hostname":"PSLT6227","reqId":"req-5","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711907068,"pid":7260,"hostname":"PSLT6227","reqId":"req-5","res":{"statusCode":200},"responseTime":0.3931000232696533,"msg":"request completed"}
+{"level":30,"time":1616711907300,"pid":7260,"hostname":"PSLT6227","reqId":"req-6","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711907300,"pid":7260,"hostname":"PSLT6227","reqId":"req-6","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711907300,"pid":7260,"hostname":"PSLT6227","reqId":"req-6","res":{"statusCode":200},"responseTime":0.29919999837875366,"msg":"request completed"}
+{"level":30,"time":1616711907491,"pid":7260,"hostname":"PSLT6227","reqId":"req-7","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711907491,"pid":7260,"hostname":"PSLT6227","reqId":"req-7","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711907491,"pid":7260,"hostname":"PSLT6227","reqId":"req-7","res":{"statusCode":200},"responseTime":0.28119999170303345,"msg":"request completed"}
+{"level":30,"time":1616711907692,"pid":7260,"hostname":"PSLT6227","reqId":"req-8","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711907692,"pid":7260,"hostname":"PSLT6227","reqId":"req-8","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711907692,"pid":7260,"hostname":"PSLT6227","reqId":"req-8","res":{"statusCode":200},"responseTime":0.27240002155303955,"msg":"request completed"}
+{"level":30,"time":1616711907907,"pid":7260,"hostname":"PSLT6227","reqId":"req-9","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711907907,"pid":7260,"hostname":"PSLT6227","reqId":"req-9","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711907907,"pid":7260,"hostname":"PSLT6227","reqId":"req-9","res":{"statusCode":200},"responseTime":0.21150004863739014,"msg":"request completed"}
+{"level":30,"time":1616711908155,"pid":7260,"hostname":"PSLT6227","reqId":"req-a","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711908155,"pid":7260,"hostname":"PSLT6227","reqId":"req-a","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711908155,"pid":7260,"hostname":"PSLT6227","reqId":"req-a","res":{"statusCode":200},"responseTime":0.3003000020980835,"msg":"request completed"}
+{"level":30,"time":1616711909300,"pid":7260,"hostname":"PSLT6227","reqId":"req-b","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711909300,"pid":7260,"hostname":"PSLT6227","reqId":"req-b","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711909300,"pid":7260,"hostname":"PSLT6227","reqId":"req-b","res":{"statusCode":200},"responseTime":0.25459998846054077,"msg":"request completed"}
+{"level":30,"time":1616711909676,"pid":7260,"hostname":"PSLT6227","reqId":"req-c","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711909676,"pid":7260,"hostname":"PSLT6227","reqId":"req-c","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711909676,"pid":7260,"hostname":"PSLT6227","reqId":"req-c","res":{"statusCode":200},"responseTime":0.2735999822616577,"msg":"request completed"}
+{"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
+{"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","msg":"Some info about the current request****************************"}
+{"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","res":{"statusCode":200},"responseTime":0.35860002040863037,"msg":"request completed"}
