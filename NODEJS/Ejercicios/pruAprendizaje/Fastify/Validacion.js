@@ -10,11 +10,11 @@ fastify.route({
     method: 'GET',
     url: '/',
     schema: {
-      // request needs to have a querystring with a `name` parameter
+       
       querystring: {
         name: { type: 'string' }
       },
-      // the response needs to be an object with an `hello` property of type 'string'
+       
       response: {
         200: {
           type: 'object',
@@ -27,15 +27,16 @@ fastify.route({
     // this function is executed for every request before the handler is executed
     preHandler: async (request, reply) => {
       // E.g. check authentication
+      console.log("# # #  preHandler # # # #");
     },
     handler: async (request, reply) => {
-      return { hello: 'Compañeros!!!' } //{ world : 'hello'}
+      return { hello2: 'Compañeros!!! Validacion Json propiedad hello' } //{ world : 'hello'}
     }
   })
   
   const start = async () => {
     try {
-      await fastify.listen(3000)
+      await fastify.listen(3002)
     } catch (err) {
       fastify.log.error(err)
       process.exit(1)

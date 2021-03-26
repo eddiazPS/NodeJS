@@ -10,7 +10,7 @@ const fastify = require('fastify')({
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
-  request.log.info('Some info about the current request****************************');
+  request.log.info('Some info about the current request**************************'+new Date());
     return { Hola : 'Compañeros', Ejemplo :" Loggin" }
   })
 
@@ -18,6 +18,7 @@ fastify.get('/', async (request, reply) => {
 // Run the server!
 const start = async () => {
     try {
+      console.log("Start.listening...");
       await fastify.listen(3007)   
     } catch (err) {
       fastify.log.error(err)

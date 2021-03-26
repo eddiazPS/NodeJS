@@ -38,3 +38,41 @@
 {"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56219},"msg":"incoming request"}
 {"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","msg":"Some info about the current request****************************"}
 {"level":30,"time":1616711909948,"pid":7260,"hostname":"PSLT6227","reqId":"req-d","res":{"statusCode":200},"responseTime":0.35860002040863037,"msg":"request completed"}
+{"level":30,"time":1616765515672,"pid":10220,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616765542010,"pid":10220,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56665},"msg":"incoming request"}
+{"level":30,"time":1616765542011,"pid":10220,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request*********26*Mar*21*****************"}
+{"level":30,"time":1616765542015,"pid":10220,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":5.077400028705597,"msg":"request completed"}
+{"level":30,"time":1616765542046,"pid":10220,"hostname":"PSLT6227","reqId":"req-2","req":{"method":"GET","url":"/favicon.ico","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56665},"msg":"incoming request"}
+{"level":30,"time":1616765542046,"pid":10220,"hostname":"PSLT6227","reqId":"req-2","msg":"Route GET:/favicon.ico not found"}
+{"level":30,"time":1616765542047,"pid":10220,"hostname":"PSLT6227","reqId":"req-2","res":{"statusCode":404},"responseTime":0.5720000267028809,"msg":"request completed"}
+{"level":30,"time":1616765748631,"pid":10220,"hostname":"PSLT6227","reqId":"req-3","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56740},"msg":"incoming request"}
+{"level":30,"time":1616765748631,"pid":10220,"hostname":"PSLT6227","reqId":"req-3","msg":"Some info about the current request*********26*Mar*21*****************"}
+{"level":30,"time":1616765748632,"pid":10220,"hostname":"PSLT6227","reqId":"req-3","res":{"statusCode":200},"responseTime":0.29269999265670776,"msg":"request completed"}
+{"level":30,"time":1616765805155,"pid":10220,"hostname":"PSLT6227","reqId":"req-4","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56777},"msg":"incoming request"}
+{"level":30,"time":1616765805155,"pid":10220,"hostname":"PSLT6227","reqId":"req-4","msg":"Some info about the current request*********26*Mar*21*****************"}
+{"level":30,"time":1616765805155,"pid":10220,"hostname":"PSLT6227","reqId":"req-4","res":{"statusCode":200},"responseTime":0.27410000562667847,"msg":"request completed"}
+{"level":30,"time":1616766018040,"pid":15272,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616766039085,"pid":15272,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":56970},"msg":"incoming request"}
+{"level":30,"time":1616766039087,"pid":15272,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request**************************Fri Mar 26 2021 08:40:39 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616766039090,"pid":15272,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.558000028133392,"msg":"request completed"}
+{"level":30,"time":1616769219776,"pid":2368,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616769262519,"pid":10496,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616769280647,"pid":10496,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":57377},"msg":"incoming request"}
+{"level":30,"time":1616769280649,"pid":10496,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request**************************Fri Mar 26 2021 09:34:40 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616769280652,"pid":10496,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.359899997711182,"msg":"request completed"}
+{"level":30,"time":1616778801860,"pid":20944,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616778844413,"pid":20944,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":58513},"msg":"incoming request"}
+{"level":30,"time":1616778844414,"pid":20944,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request**************************Fri Mar 26 2021 12:14:04 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616778844417,"pid":20944,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.043599963188171,"msg":"request completed"}
+{"level":30,"time":1616779704826,"pid":660,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:4004"}
+{"level":30,"time":1616779718892,"pid":660,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:4004","remoteAddress":"127.0.0.1","remotePort":58655},"msg":"incoming request"}
+{"level":30,"time":1616779718895,"pid":660,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request**************************Fri Mar 26 2021 12:28:38 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616779718897,"pid":660,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.6650999784469604,"msg":"request completed"}
+{"level":30,"time":1616779759593,"pid":660,"hostname":"PSLT6227","reqId":"req-2","req":{"method":"GET","url":"/","hostname":"127.0.0.1:4004","remoteAddress":"127.0.0.1","remotePort":58656},"msg":"incoming request"}
+{"level":30,"time":1616779759593,"pid":660,"hostname":"PSLT6227","reqId":"req-2","msg":"Some info about the current request**************************Fri Mar 26 2021 12:29:19 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616779759593,"pid":660,"hostname":"PSLT6227","reqId":"req-2","res":{"statusCode":200},"responseTime":0.296999990940094,"msg":"request completed"}
+{"level":30,"time":1616779968979,"pid":10548,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616780331956,"pid":17640,"hostname":"PSLT6227","msg":"Server listening at http://127.0.0.1:3007"}
+{"level":30,"time":1616780351369,"pid":17640,"hostname":"PSLT6227","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3007","remoteAddress":"127.0.0.1","remotePort":58718},"msg":"incoming request"}
+{"level":30,"time":1616780351370,"pid":17640,"hostname":"PSLT6227","reqId":"req-1","msg":"Some info about the current request**************************Fri Mar 26 2021 12:39:11 GMT-0500 (hora estándar de Colombia)"}
+{"level":30,"time":1616780351373,"pid":17640,"hostname":"PSLT6227","reqId":"req-1","res":{"statusCode":200},"responseTime":4.04559999704361,"msg":"request completed"}
