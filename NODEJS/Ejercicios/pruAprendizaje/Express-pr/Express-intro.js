@@ -12,4 +12,7 @@ https://expressjs.com/
  * 
  * https://jsonplaceholder.typicode.com/
  * 
+ * 
+ *  Repo gustavo : https://github.com/gcortesm/nodeJs/tree/master/NODEJS/AutoAprendizaje
+ * 
  */

@@ -19,5 +19,10 @@ https://nx.dev/
  * npx nx generate @nrwl/nest:servicio todo --project todos -- directory app
  * 
  * 
+ * 
+ * Comandos: https://github.com/ingalexis/NodeJs/blob/master/NodeGuia/Guia.js Al final
+Archivos: https://github.com/ingalexis/NodeJs/tree/master/NodeGuia/myorg
+ * 
+ * 
  */
 
