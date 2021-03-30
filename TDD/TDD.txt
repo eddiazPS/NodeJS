@@ -11,6 +11,6 @@ REQ1  simular las base de datos:  listas blancas como una tabla con llave primar
                                          Especificacion2: generar una estructura en memoria que cumpla con gurdar repetidos
 
 REQ2   mostrar un reporte de integridad  validaciones de caracteres  , listas blancas y listas negras si lo tienen o si no esta en su defecto 
-                                        Especificacion3 :  Mostrar los reportes de validacion y listas negras como errores  
+                                        Especificacion3 :  Mostrar los reportes de validacion, si ya esta registrado en listas blancas y listas negras, mostarlo  como errores  
 
 ----------------------------------------------------------------------------------------------------
