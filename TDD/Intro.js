@@ -85,17 +85,57 @@
  * 
  * una vez finalizada la refactorizacion se repite el proceso 
  * 
+ * es un bucel sin fin de un proceso muy corto *
  * 
- * es un bucel sin fin de un proceso muy corto 
+ * 
+ * 
  * 
  * 
  * 
  * pruebas e implementacion se tiene que hacer rapido 
  * 
- * 
  * codigo estructura a requisitos no ideas 
- * 
  * 
  * pruebas mas que codigo tienen que ser certificadores que se cumple la espesificacion 
  *    
+ * 
+ * idea: descripcion 
+ * 
+ * 
+ * 
+ * PRUEBAS  
+ * 
+ * CAJA NEGRA  -  usan la interfaces y se aseguran que funcione como se espera No ven las entrañas , dar una perspectiva externa al programa que estan evaluenado,
+ *  eficiente para grandes segmentos de codigo - el de pruebas no sabe desarrollar no entiende de codigo   
+ * 
+ * 
+ * CAJA BLANCA  - prubas de caja transpartente caja de vidrio o estructurales 
+ * analiza la estructura de software, se evaluan escenarios , pruebas eficientes para encontrar errores , evaluan el codigo, permiten econtrar errores ocultos , (pruebas detalladas)
+ * optimizacion del codigo , se requiere un conocimiento profundo de programacion 
+ * 
+ * 
+ * negra VS blanca     = diferencia gigante el conocimiento    
+ * 
+ * tdd pruebas de caja blanca antes de la implementacion del codigo 
+ * 
+ * 
+ * 
+ * CONTROL DE CALIDAD Y GARANTIA DE CALIDAD 
+ * 
+ * con el c c  se centran en el producto echo en econtrar defectos , GC preveienen estos defectos la idea es no encontrarlos 
+ * el orden en el que se escriben las pruebas es importante, espesificaciones e ihistoria de usuario ,  pruebas , codigo
+ * las pruebas definen el codigo 
+ * 
+ * 
+ * SINDROME POLICIAL 
+ * 
+ * fallo el equipo de desarollo 
+ * 
+ * 
+ * EL ORDEN IMPORTA  
+ * 
+ * pruebas 
+ * 
+ * codigo >
+ *  
  */
