@@ -7,10 +7,10 @@ pag de referencia listas negras: https://www.imeicolombia.com.co/
 
 REQ1  simular las base de datos:  listas blancas como una tabla con llave primaria unica. estos son los IMEI's registrados y en funcionamiento
                                         Especificacion1: generar una estructura en memoria que cumpla con los no repetidos
-                                 listas negras como una tabla con los distintos reportes, un mismo IMEI puede tener distintos reportes en distintas fechas, estos son los IMEI's bloqueados.  
+                                  listas negras como una tabla con los distintos reportes, un mismo IMEI puede tener distintos reportes en distintas fechas, estos son los IMEI's bloqueados.  
                                          Especificacion2: generar una estructura en memoria que cumpla con gurdar repetidos
 
-REQ2   mostrar un reporte de integridad  validaciones de caracteres  , listas blancas y listas negras si lo tienen o si no esta en su defecto 
+REQ2   Mostrar un reporte por IMEI de integridad:  validaciones de caracteres  , listas blancas y listas negras si lo tienen o si no esta en su defecto 
                                         Especificacion3 :  Mostrar los reportes de validacion, si ya esta registrado en listas blancas y listas negras, mostarlo  como errores  
 
 ----------------------------------------------------------------------------------------------------
