@@ -8,14 +8,14 @@ pag de referencia listas negras: https://www.imeicolombia.com.co/
 *REQUERIMIENTO1  Simular las base de datos:  *listas blancas simular una tabla con llave primaria unica. estos son los IMEI's registrados y en funcionamiento.
                                              *listas negras simular una tabla con los reportes de cada operador; un mismo IMEI puede tener distintos reportes, estos son los IMEI's bloqueados. 
                                          
-                                         Especificacion1: Generar una estructura en memoria que no permita guardar repetidos. 
-                                         Especificacion2: Generar una estructura en memoria que pueda guardar repetidos.
-                                         Espesificacion3: Reportes en Listas Negras incluiran: #IMEI , Fecha, Operador y el motivo del Reporte.
-                                         Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria)  
+                                                Especificacion1: Generar una estructura en memoria que no permita guardar repetidos. 
+                                                Especificacion2: Generar una estructura en memoria que pueda guardar repetidos.
+                                                Espesificacion3: Reportes en Listas Negras incluiran: #IMEI , Fecha, Operador y el motivo del Reporte.
+                                                Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria)  
 
-*REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI :  validaciones de caracteres  , listas blancas y listas negras si lo tienen. 
-                                        Especificacion5 : - Mostrar los errores de validacion si lo tiene.
-                                                          - Obtener reporte como error si ya esta registrado en listas blancas. 
-                                                          - Obtener reporte como error de listas negras.  
-                                        Especificacion6: Mostar si no esta registrado en base de datos postiva(listas blancas) ni negativa (listas Negras)   
+*REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI :  validaciones de caracteres, validacion listas blancas y reporte listas negras si lo hay. 
+                                                Especificacion5 : - Mostrar los errores de validacion si lo tiene (caracteres y longitud).
+                                                                - Obtener reporte como error si ya esta registrado en listas blancas. 
+                                                                - Obtener reporte en listas negras.  
+                                                Especificacion6: si no presenta errores Mostar que no esta registrado en base de datos positiva(listas blancas) ni negativa (listas Negras)   
 ----------------------------------------------------------------------------------------------------
