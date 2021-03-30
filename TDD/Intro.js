@@ -60,4 +60,42 @@
  * verde - ok 
  * refactoriza
  *  
+ * 
+ * 30 - 03 -2021 Refacto rojo verde 
+ * 
+ * cuado estamos escribiendo las pruebas estamos en rojo  
+ * 
+ * 
+ * ponerse un tiempo de forma personal o a nivel de equipo para las reparaciones 
+ * 
+ * hemos hecho la implemetacion que tiene algo mal , vuelve al punto de partida 
+ * 
+ * cobertura de la pruebas existentes  (excluyendo la ultima prueba ) debe ser sagrada
+ * 
+ * no ir toquetiando el codigo, por culpa de una ultima prueba , cambiamos el codigo existente mediante una refactorizacion , no es una foma de corregir 
+ * 
+ * nos da mas confianza salir a produccion  ya que todo esta en verde en nuestra rede deseguridad 
+ * 
+ * poder refacorizar con confianza pensada a mejorar el codigo NO A INTRODUCIR NUEVAS FUNCIONALIDADES 
+ * 
+ * poder descanzar que la refactorizacion esta respaldad por nuestra red de pruebas 
+ *
+ * tdd reducir costos de mantenimiento futuro  estamos probando y corrigiendo y mantenimiento al mismo tiempo
+ * 
+ * 
+ * una vez finalizada la refactorizacion se repite el proceso 
+ * 
+ * 
+ * es un bucel sin fin de un proceso muy corto 
+ * 
+ * 
+ * 
+ * pruebas e implementacion se tiene que hacer rapido 
+ * 
+ * 
+ * codigo estructura a requisitos no ideas 
+ * 
+ * 
+ * pruebas mas que codigo tienen que ser certificadores que se cumple la espesificacion 
+ *    
  */

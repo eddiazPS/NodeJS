@@ -1,0 +1,8 @@
+IDEA :   Comprobar la integridad del IMEI ingresado, simular BD listas blancas y BD listas negras,
+haciendo la distincion en las listas negras por tipo de bloqueo.
+
+pag de referencia listas negras: https://www.imeicolombia.com.co/
+
+
+
+
