@@ -143,5 +143,35 @@
  * 
  * 
  * 
- * La prueba es certificadora de la implementacion 
+ * La prueba es certificadora de la implementacion
+ * 
+ * 
+ * 
+ * MOCKING  31/03/21-------------------------------------------------- 
+ * 
+ * 
+ * 
+ * pequeñas partes remplazables , o depender de las dependencias ,  si dependemos de algo que no sea de stopper
+ * eliminar factoes externos, uno de los beneficios claes es que  no va servirde estoper , y vamos a tener flexibilidad para haer pruebas 
+ * 
+ * documentacion ejecutable 
+ * el codigo debe escribirse de tal forma que puedan reemplazar facilmente una dependencia por otra 
+ * mirando pruebas se puede entender el codigo  mas que viendo la propia documentacion 
+ * 
+ * documentacion ejecutable  
+ * 
+ * sin depuracion 
+ * codigo sin pruebas (codigo ocurre un error -> depurar)
+ * con tdd rara vez se depura el codigo 
+ * cobertura de codigo encontrar el error es mucho mas facil 
+ * 
+ * Herramientas marcos y entornos 
+ * Nos convertimos en lo que contemplamos. Damos forma a nuestras herramientas y luego nuestras herramientas nos dan forma a osotros 
+ * 
+ * 
+ * Seudo pruebas 
+ * espesificaciones 
+ * 
+ * 
+ *  
  */

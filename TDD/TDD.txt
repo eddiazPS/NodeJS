@@ -8,10 +8,10 @@ pag de referencia listas negras: https://www.imeicolombia.com.co/
 *REQUERIMIENTO1  Simular las base de datos:  *listas blancas simular una tabla con llave primaria unica. estos son los IMEI's registrados y en funcionamiento.
                                              *listas negras simular una tabla con los reportes de cada operador; un mismo IMEI puede tener distintos reportes, estos son los IMEI's bloqueados. 
                                          
-                                                Especificacion1: Generar una estructura en memoria que no permita guardar repetidos. 
-                                                Especificacion2: Generar una estructura en memoria que pueda guardar repetidos.
+                                                Especificacion1: Generar una estructura en memoria que NO permita guardar IMEI repetidos. 
+                                                Especificacion2: Generar una estructura en memoria que permita guardar IMEI repetidos.
                                                 Espesificacion3: Reportes en Listas Negras incluiran: #IMEI , Fecha, Operador y el motivo del Reporte.
-                                                Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria)  
+                                                Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria no se contradigan)  
 
 *REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI :  validaciones de caracteres, validacion listas blancas y reporte listas negras si lo hay. 
                                                 Especificacion5 : - Mostrar los errores de validacion si lo tiene (caracteres y longitud).
@@ -19,3 +19,25 @@ pag de referencia listas negras: https://www.imeicolombia.com.co/
                                                                 - Obtener reporte en listas negras.  
                                                 Especificacion6: si no presenta errores Mostar que no esta registrado en base de datos positiva(listas blancas) ni negativa (listas Negras)   
 ----------------------------------------------------------------------------------------------------
+PSEUDO-PRUEBAS 
+
+  *REQUERIMIENTO1  Simular las base de datos:
+                                   listas blancas: IMEI unico ->  new Set(["432456789002345","432456789002347",...])          
+
+                                   listas negras: IMEI Reportado (puede estar repetido) -> = [["888856777712345", "09/09/2020", "Avantel", "Robo/Hurto"],
+                                                                                              ["888856777712345", "10/01/2019", "Claro", "Duplicado"] , ....]
+
+
+  *REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI:
+
+                                   Especificacion5: Ocurre en secuencia; orden de condicion if 
+                                                     1) Errores de validacion IMEI -inPut '234566 32456763' -OutPut console.error('EL IMEI contiene epacios'); se pone fin al programa. 
+                                                     2) Reporte de error si ya esta en listas blancas -inPut '432456789002347' -OutPut console.error('El IMEI ya esta registrado'); se pone fin al programa.
+                                                     3) Reporte listas negras  -inPut '888856777712345' -OutPut console.error( 'EL IMEI contiene reportes '); se pone fin al programa.
+                                   Especificacion6:  4) Reporte de integridad, Mostrar que el IMEI -inPut '453212984723874' -OutPut console.log('El IMEI no esta registrado en BD positiva ni negativa');
+----------------------------------------------------------------------------------------------------                                   
+
+
+
+
+
