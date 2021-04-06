@@ -26,6 +26,10 @@ PSEUDO-PRUEBAS
 
                                    listas negras: IMEI Reportado (puede estar repetido) -> = [["888856777712345", "09/09/2020", "Avantel", "Robo/Hurto"],
                                                                                               ["888856777712345", "10/01/2019", "Claro", "Duplicado"] , ....]
+									Especificacion1: Generar una estructura en memoria que NO permita guardar IMEI repetidos. 
+                                    Especificacion2: Generar una estructura en memoria que permita guardar IMEI repetidos.
+                                    Espesificacion3: Reportes en Listas Negras incluiran: #IMEI , Fecha, Operador y el motivo del Reporte.
+                                    Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria no se contradigan)  														  
 
 
   *REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI:
@@ -36,6 +40,10 @@ PSEUDO-PRUEBAS
                                                      3) Reporte listas negras  -inPut '888856777712345' -OutPut console.error( 'EL IMEI contiene reportes '); se pone fin al programa.
                                    Especificacion6:  4) Reporte de integridad, Mostrar que el IMEI -inPut '453212984723874' -OutPut console.log('El IMEI no esta registrado en BD positiva ni negativa');
 ----------------------------------------------------------------------------------------------------                                   
+
+
+
+requerimiento    prueba       |   estado       entradas y salidas     descripcion de la prueba   Nombre: espesificacion 
 
 
 

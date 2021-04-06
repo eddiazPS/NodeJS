@@ -172,6 +172,83 @@
  * Seudo pruebas 
  * espesificaciones 
  * 
+ * TAPE -------------------------------------------------------------------
  * 
+ * https://www.npmjs.com/package/tape
+ *  npm init --y
+ * npm init --yes
+ * 
+ * Tape modulo de pruebas que produce algo TAP
+ * 
+ * npm install --save --dev tape 
+ * 
+ * 
+ * 
+ * MOKA -----------------------------------------------------------------------
+ * 
+ * https://mochajs.org/
+ * 
+ * npm install --save-dev mocha
+ * npm install --save-dev chai 
+ * 
+ * JEST -----------------------------------------------------------------------------
  *  
+ * //https://jestjs.io/es-ES/docs/api
+ * 
+ * npm test
+ * node ./node_modules/jest/bin/jest.js --coverage
+ * 
+ * --------------------------------------------------------------------------
+ * 
+ * 
+ * 
+ * MOKUP 5/04/2021
+ * 
+ * 
+ * funcion espia (pruebas) : analiza a estructura de (clonar copia del comportamiento de una funcion ), s. se usa mucho por tener una copia del comportamiento real
+ * 
+ *  npm install --save-dev babel-jest
+ * 
+ * npm install --save-dev babel-jest jest @types/jest
+ * 
+ * 
+ * 
+ * mock >  mkdir src\controller\__tests_
+ * 
+ * 
+ * PS C:\Users\eddiaz\Documents\GitHub\NodeJS\TDD\Mock\src\controller> type nul>__tests/users.test.js
+ * 
+ * package.json
+ * 
+ *  "dependencies": {
+    "axios": "^0.19.2"
+ * 
+ * PS C:\Users\eddiaz\Documents\GitHub\NodeJS\TDD\Mock> npm install
+ * 
+ * 
+ * 
+ * PROBAR APIS https://jsonplaceholder.typicode.com/
+ * 
+ * 
+ * run : PS C:\Users\eddiaz\Documents\GitHub\NodeJS\TDD\Mock> npm test
+ * 
+ * 
+ * 
+ * PS C:\Users\eddiaz\Documents\GitHub\NodeJS\TDD\Mock> npm install nodemon
+ * 
+ * PS C:\Users\eddiaz\Documents\GitHub\NodeJS\TDD\Mock> npm run dev
+ 
+ 
+ 
+ ejecutamos en http://localhost:1234/api/users/2
+ 
+ cambiar de version node
+ 
+ https://github.com/nvm-sh/nvm
+GitHubGitHub
+nvm-sh/nvm
+Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions - nvm-sh/nvm
+ 
+ 
+ 
  */

@@ -1,3 +1,5 @@
+console.log("go");
+
 
 /**
  * https://v8.dev/
@@ -65,12 +67,15 @@ console.log(process.argv);
  * */ 
 
 //https://www.utf8-chartable.de/unicode-utf8-table.pl?utf8=0x
-let buffer = Buffer.from([0x41,0x42,0x43]);
+let buffer = Buffer.from([0x49,0x42,0x43]);
 console.log(buffer.toString());
 console.log(buffer.toString("hex"));
 
-
-
+let data55 = 'c3RhY2thYnVzZS5jb20=';
+let buff = new Buffer.from(data55, 'base64');
+console.log (buff);
+let text55 = buff.toString('ascii');
+console.log('"' + data55 + '" converted from Base64 to ASCII is "' + text55 + '"');
 
 // string a buffer que maneje ASCII
 let computer = Buffer.from("IBM 3111","ascii");
