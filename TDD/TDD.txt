@@ -26,7 +26,7 @@ PSEUDO-PRUEBAS
 
                                    listas negras: IMEI Reportado (puede estar repetido) -> = [["888856777712345", "09/09/2020", "Avantel", "Robo/Hurto"],
                                                                                               ["888856777712345", "10/01/2019", "Claro", "Duplicado"] , ....]
-									Especificacion1: Generar una estructura en memoria que NO permita guardar IMEI repetidos. 
+									                  Especificacion1: Generar una estructura en memoria que NO permita guardar IMEI repetidos. 
                                     Especificacion2: Generar una estructura en memoria que permita guardar IMEI repetidos.
                                     Espesificacion3: Reportes en Listas Negras incluiran: #IMEI , Fecha, Operador y el motivo del Reporte.
                                     Espesificacion4: Almacenaran datos consistentes en las Bases de datos (estructuras en memoria no se contradigan)  														  

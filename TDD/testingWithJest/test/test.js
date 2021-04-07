@@ -88,11 +88,12 @@ describe('stringMatching in arrayContaining', () => {
 
 //seleccionar una para el tdd 
 
-
-describe('IMEI Espesificacion 5.1 Errores iniciales de validacion, tamaño espacios o caracteres', () => {
-  
+describe('REQUERIMIENTO2 Mostrar un reporte de integridad por IMEI',()=>{
   const IMEI ='123434456729016';
 
+ describe('ESPESIFICACION5.1 Errores de validacion, tamaño espacios o caracteres', () => {
+  
+  
   const expected1 = [
     expect.stringMatching(/\W/),   
   ];
@@ -116,8 +117,26 @@ describe('IMEI Espesificacion 5.1 Errores iniciales de validacion, tamaño espac
     );
   });
  
+ });
+  describe('ESPESIFICACION5.2 Reporte de error si ya esta en listas blancas', () => { 
+
    
 
+      test.each([
+          [123434456729016]
+        ])(`IMEI listas blancas(%i) = ${IMEI}`, (a) => {
+          expect( a == IMEI   ).toBe(true);
+        });
+  
+        test.todo('Otener ...  ');  
+  
+  });
+  
 
 });
+
+
+ 
+// npm test
+// node ./node_modules/jest/bin/jest.js --coverage
 

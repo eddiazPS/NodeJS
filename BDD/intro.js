@@ -2,12 +2,12 @@
  * BDD
  * 
  * 
- * sintaxis jakins 
+ * sintaxis  jenkins 
  * 
- * nos aya aque nuestra pruebas las esntienda todo el mundo (el gerente)
+ * nos entienda todo el mundo (el gerente)
  * 
  * 
- * 
+ * TDD (codigo directo) BDD (selenum behave) parte de la redaccion 
  * 
  * 
  */
