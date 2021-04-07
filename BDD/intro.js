@@ -35,5 +35,9 @@
  * 
  * dado un request al inviarlo en cierta direccion debo rescibir la respuesta con coigo 200
  * 
+ * dado   ingresen comando cuando le de enter       entonces se recibe una respuesta de ingresado
+ * 
+ * feature espesificacion 
+ * 
  * 
  */
