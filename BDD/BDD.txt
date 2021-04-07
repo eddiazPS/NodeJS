@@ -1,0 +1,31 @@
+ ------------------------------------------------------------------------------------------------------------Dado/Given, Cuando/When, Entonces/Then
+
+*REQUERIMIENTO1  Simular las base de datos: listas blancas  listas negras  
+
+       Especificacion1-4 Generar estructuras consistentes en memoria, que se asemejen a las bases de datos reales , los reportes de listas negras  incluirán: #IMEI , Fecha, Operador y el motivo del Reporte.
+            
+            Escenario1 Dadas las bases de datos de regulación nacionales que están en constante comunicación con los operadores y organismos internacionales.
+                       Cuando el operador requiere hacer una mejora al sistema no puede aspirar a una copia fácilmente
+                       Entonces  es necesario crear datos de prueba con la misma estructura y así generar reportes con todos los campos.  
+
+
+*REQUERIMIENTO2   Mostrar un reporte de integridad por IMEI:
+        
+        Especificacion5: Se quiere validar si un IMEI es valido y total mente libre para salir al mercado, es primordial que el Imei que no pertenezca a las listas:  bancas y negras.  
+
+            Escenario2 :   Dadas las condiciones de validación, el IMEI tiene que tener 15 dígitos seguidos, no puede tener espacios, letras ni caracteres especiales, como tampoco pertenecer a las listas bancas o negras.
+                           Cuando se ingrese el IMEI a la aplicación por el usuario interesado 
+                           Entonces se espera que la aplicación retorne 1) error si existe no conformidades en la estructura del IMEI
+                                                                    2) (consulta Listas Blancas) error si ya existe en listas blancas 
+                                                                    3) (consulta Listas Negras)error y reporte de listas negras si lo hay
+                                                                    4) Reporte de integridad, Mostrar que el IMEI es valido y que no esta registrado en BD positiva ni negativa       
+        
+
+       Especificacion6: Generar una consulta masiva en el sistema para el reporte de integridad IMEI'S 
+            
+            Escenario3: Dada la demanda y los altos volúmenes de dispositivos nuevos que usan la tecnología del IMEI. 
+                        Cuando los fabricantes y/u Operadores no pueden hacer esto manual 
+                        Entonces se espera ingresar en un excel los IMES's a validar  
+
+
+------------------------------------------------------------------------------------------------------------
