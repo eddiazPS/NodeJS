@@ -33,8 +33,10 @@ console.log("go");
  
  admin packetes de node google npm
  */
-//console.log("Hola");
-console.log(process.argv);
+console.log("Hola");
+
+//The first element will be process.execPath. See process.argv0 if access to the original value of argv[0] is needed. The second element will be the path to the JavaScript file being executed. 
+console.log(process.argv); 
 
 //   MODULO 1
 //https://www.npmjs.com/package/sort-keys
@@ -67,7 +69,8 @@ console.log(process.argv);
  * */ 
 
 //https://www.utf8-chartable.de/unicode-utf8-table.pl?utf8=0x
-let buffer = Buffer.from([0x49,0x42,0x43]);
+let buffer = Buffer.from([0x49,0x42,0x43,0x33]);
+console.log(buffer);
 console.log(buffer.toString());
 console.log(buffer.toString("hex"));
 
@@ -81,14 +84,23 @@ console.log('"' + data55 + '" converted from Base64 to ASCII is "' + text55 + '"
 let computer = Buffer.from("IBM 3111","ascii");
 console.log(computer.toString("ascii"));
 console.log(computer.subarray(0,3).map(x=> x+1).toString());
-
-
+console.log(computer.toString());
 
 for (let i = 0 ; i < computer.length; i++){
     computer[i]--;
 }
 
 console.log(computer.toString("ascii")); //toString()
+
+//toString
+const buf1 = Buffer.from('buffer');
+const buf2 = Buffer.from(buf1);
+//buf1[0] = 0x61;
+console.log(buf1.toString());
+console.log(buf1.toString("ascii"));
+// Prints: auffer
+console.log(buf2.toString("utf-8"));
+// Prints: buffer
 
 
 // crear buffer vacios si estan inicializados, usamos unas funciones 
@@ -102,7 +114,7 @@ console.log(unos);
 let patterns = Buffer.alloc(1024,"DBEF","hex");  // patron de bytes 
 console.log(patterns);
 
-const EventEmitter = require('events');
+//const EventEmitter = require('events');
 // codificar leer archivos, manipular archivos en el SO  o mediante la red, es + para codificar y decodificar protocolos TCP UDP
 
 
@@ -120,8 +132,9 @@ const EventEmitter = require('events');
  * 
  */
 
+  
+ const EventEmitter = require ('events');
 
- const eventEmitter = require ('events');
  const  net  = require ('net');         
 
 let server = new net.Server();
@@ -132,6 +145,65 @@ console.log(server instanceof EventEmitter);
 server.on('connection',socket => {    //(nombre del evento que se va alanzar , lambda )
     socket.end("hello word !!!","utf-8") // evento con on -> escucha   caundo se conecte manda el console  y se desconecta 
 });
+
+//https://nodejs.org/api/events.html#events_handling_events_only_once
+
+const myEmitter = new EventEmitter();
+let m = 0;
+myEmitter.on('event', () => {
+  console.log(++m);
+});
+myEmitter.emit('event');
+// Prints: 1
+myEmitter.emit('event');
+// Prints: 2
+
+
+ 
+ m = 0;
+myEmitter.once('event', (x,y) => {
+  console.log(x+y+" " +m);
+});
+myEmitter.emit('event',2,2);
+// Prints: 1
+myEmitter.emit('event');
+// Ignored
+
+
+
+
+//const EventEmitter = require('events');
+//const myEmitter = new EventEmitter();
+
+// First listener
+myEmitter.on('event', function firstListener() {
+  console.log('Helloooo! first listener');
+});
+// Second listener
+myEmitter.on('event', function secondListener(arg1, arg2) {
+  console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+});
+// Third listener
+myEmitter.on('event', function thirdListener(...args) {
+  const parameters = args.join(', ');
+  console.log(`event with parameters ${parameters} in third listener`);
+});
+
+console.log(myEmitter.listeners('event'));
+
+myEmitter.emit('event', 1, 2, 3, 4, 5);
+
+
+// Prints:
+// [
+//   [Function: firstListener],
+//   [Function: secondListener],
+//   [Function: thirdListener]
+// ]
+// Helloooo! first listener
+// event with parameters 1, 2 in second listener
+// event with parameters 1, 2, 3, 4, 5 in third listener
+
 
 
 /**
@@ -157,9 +229,33 @@ server.on('connection',socket => {    //(nombre del evento que se va alanzar , l
 
 const fs = require ('fs');
 
+
 function pipeFileToSocket (fileName,socket){
  fs.createReadStream(fileName).pipe(socket);
 }
+
+let stream = fs.createReadStream('./OrigCopy2.txt','UTF-8');
+
+let data1 = '';
+
+stream.once('data1',()=>{
+    console.log('iniciando \n');
+
+});
+
+
+stream.on('data1',chunk=>{
+   // console.log(`${chunk.length} | `);
+    data1 += chunk;
+});
+
+stream.on('end',()=>{
+    console.log('fin \n');
+    console.log(data1.length);
+
+
+});
+
 
 
 /**
