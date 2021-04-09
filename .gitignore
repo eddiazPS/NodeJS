@@ -22,3 +22,6 @@ TDD\mock2\Mock\package-lock.json
 
 BDD\node_modules
 BDD\package-lock.json
+
+BDD\BDDejercicio\node_modules
+BDD\BDDejercicio\package-lock.json

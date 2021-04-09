@@ -1,6 +1,8 @@
 /**
- * BDD
- * 
+ * BDD : usando Gherkin y generacion de steps con cucumber
+ * PRUBAS CONPORTAMENTALES    
+ * escenarios features y step
+ * Simulacion API con  const axios = require('axios');
  * 
  * sintaxis  jenkins 
  * 
@@ -38,6 +40,21 @@
  * dado   ingresen comando cuando le de enter       entonces se recibe una respuesta de ingresado
  * 
  * feature espesificacion 
+ * 
+ * 
+ * ********************************************************************************************************
+ *   
+ * instalar server npm install -g json-server
+ * 
+ * subir server  C:\Users\eddiaz\Documents\GitHub\NodeJS\BDD> json-server --watch db.json
+ *                 C:\Users\eddiaz\Documents\GitHub\NodeJS\BDD> json-server -p 80 --watch db.json
+ *   ejecutar prueba C:\Users\eddiaz\Documents\GitHub\NodeJS\BDD> npm test
+ * 
+ *  ejecutar reporte   C:\Users\eddiaz\Documents\GitHub\NodeJS\BDD> node .\report.js
+ * 
+ * correr reporte con el Script package.json  C:\Users\eddiaz\Documents\GitHub\NodeJS\BDD> npm run report
+ * 
+ * 
  * 
  * 
  */
