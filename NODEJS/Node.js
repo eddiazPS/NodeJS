@@ -230,32 +230,30 @@ myEmitter.emit('event', 1, 2, 3, 4, 5);
 const fs = require ('fs');
 
 
-function pipeFileToSocket (fileName,socket){
- fs.createReadStream(fileName).pipe(socket);
-}
+// function pipeFileToSocket (fileName,socket){
+//  fs.createReadStream(fileName).pipe(socket);
+// }
+ 
 
-let stream = fs.createReadStream('./OrigCopy2.txt','UTF-8');
+let stream = fs.createReadStream('../OrigCopy2.txt','UTF-8');
 
-let data1 = '';
+let dataa = '';
 
-stream.once('data1',()=>{
+stream.once('data',()=>{
     console.log('iniciando \n');
 
 });
 
 
-stream.on('data1',chunk=>{
+stream.on('data',chunk=>{
    // console.log(`${chunk.length} | `);
-    data1 += chunk;
+    dataa += chunk;
 });
 
 stream.on('end',()=>{
     console.log('fin \n');
-    console.log(data1.length);
-
-
+    console.log(dataa.length);
 });
-
 
 
 /**
@@ -285,7 +283,7 @@ console.log(os.type());  // tipo sistema operativo
  
 
 console.log("####### PROCESS ###########");
-console.log(process.argv); // Una matriz de argumentos de la línea de comandos.
+/*console.log(process.argv); // Una matriz de argumentos de la línea de comandos.
 console.log(process.arch); // La arquitectura de la CPU: "x64", por ejemplo.
 console.log(process.cwd()); // Devuelve el directorio de trabajo actual.
 console.log(process.chdir(".")); // Establece el directorio de trabajo actual.
@@ -298,7 +296,7 @@ console.log(process.getuid ); // Devuelve el ID de usuario de Unix del usuario a
 console.log(process.hrtime.bigint ()); // Devuelve una marca de tiempo de nanosegundos de "alta resolución".
 //console.log(process.kill ()); // Envía una señal a otro proceso.
 //console.log(process.memoryUsage ()); // Devuelve un objeto con detalles de uso de memoria.
-///**/console.log(process.nextTick ()); // Como setImmediate (), invoca una función pronto.
+///console.log(process.nextTick ()); // Como setImmediate (), invoca una función pronto.
 console.log(process.pid); // El ID de proceso del proceso actual.
 console.log(process.ppid); // El ID del proceso padre.
 console.log(process.platform); // El sistema operativo: "linux", "darwin" o "win32", por ejemplo.
@@ -331,7 +329,7 @@ console.log(os.constants); // Constantes útiles como os.constants.signals.SIGIN
     console.log(os.uptime()); // Devuelve el tiempo de actividad del sistema en segundos.
     console.log(os.userInfo()); // Devuelve uid, nombre de usuario, inicio y shell del usuario actual.
 
-
+*/
 
 
 
@@ -398,6 +396,7 @@ console.log(path.posix); // linux
 
 const fs2 = require ('fs');
 
+console.log("FS2");
 let buffer2 = fs2.readFileSync(path.join(__dirname,"fs.txt"));
 console.log(buffer2);
 
@@ -405,21 +404,22 @@ let text = fs2.readFileSync(path.join(__dirname,"fs.txt"),"utf-8");
 console.log(text);
 
 // lectura de forma asincrona con callbacks  
-fs2.readFile(path.join(__dirname,"fs.txt"),(err,buffer)=> {
+fs2.readFile(path.join(__dirname,"fs.txt"),(err,buffer3)=> {
 if(err){
 console.log(`Error ${err}`);
 }else{
-console.log(` ok ${buffer}`);
+console.log(` ok ${buffer3}`);
+
 }
 });
-
+console.log('Fin FSS');
 // lectura con promesas 
+console.log('promesas');
 
-
-fs.promises.readFile(path.join(__dirname,"fs.txt"),"utf-8").then(processFileText => {
+fs2.promises.readFile(path.join(__dirname,"fs.txt"),"utf-8").then(processFileText => {
     console.log(processFileText);
 }).catch(handleReadError => {
-     console.log(handleReadError)
+     console.log(handleReadError);
 });
 
 
@@ -434,7 +434,7 @@ console.log(test2);
 processTest(path.join(__dirname,"fs.txt"));
 
 
-
+console.log('promesas fin ');
 
 /**
  * DESCRIPTORES

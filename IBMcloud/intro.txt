@@ -1,0 +1,153 @@
+https://cloud.ibm.com/
+
+
+
+
+
+Cloudant      -  formato json   se admite Strings ...   hay un limite los documentos que este dentro de la BD < 1M
+
+
+
+{
+  "_id": "0e0f71c0a4eee9fcd69c1602753c2f1a"
+}
+
+_  todos los cammpos que empicen _ se los reserva clouddant , propias palabras reservadas 
+campos de primer nivel no crearlos con _ 
+
+
+dejar que clodant maneje los id o nostros manejamos los ids 
+
+
+
+
+
+---------------------
+mayor que 
+
+{
+   "selector": {
+      "age": {
+         "$gt": 26
+      }
+   },
+   "fields": [
+      "FirtsName"
+   ]
+}
+
+
+----------------
+menor que 
+
+{
+   "selector": {
+      "age": {
+         "$lt": 36
+      }
+   },
+   "fields": [
+      "FirtsName"
+   ]
+}
+
+
+-------------------
+
+crear un indice 
+
+
+filtro  
+
+{
+   "index": {
+      "fields": [
+         "age"
+      ]
+   },
+      "ddoc": "doc_1",
+      "type": "json"
+}
+
+
+---------------------------------
+
+uso el indice 
+
+{
+   "selector": {
+      "age": {
+         "$gt": 20
+      }
+   },
+   "fields": [
+      "FirstName"
+   ],
+   "sort": [
+      {
+         "age": "desc"   //asc
+      }
+   ]
+}
+
+_____________________________________________
+EJERCICIO 
+
+datos
+
+{
+  "_id": "shop_3",
+  "formaPago": "A",
+  "valor": "300",
+  "tienda": "A1"
+}
+
+-------------
+
+{
+   "selector": {
+      "valor": {
+         "$gt": 400
+      }
+   },
+   "fields": [
+      "valor",
+      "formaPago"
+   ]
+}
+
+------------------
+
+
+filtro  
+
+{
+   "index": {
+      "fields": [
+         "valor"
+      ]
+   },
+      "ddoc": "shop_3",
+      "type": "json"
+}
+
+------------------------
+uso indice 
+
+{
+   "selector": {
+      "valor": {
+         "$gt": 400
+      }
+   },
+   "fields": [
+      "valor",
+      "formaPago"
+   ],
+   "sort": [
+      {
+         "valor": "desc"
+      }
+   ],
+   "use_index": "_design/shop_3"
+}

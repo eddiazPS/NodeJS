@@ -28,7 +28,9 @@ function serve (rootDirectory , port){
         }
         else  if (endpoint === '/test/file')
         {
-              let fileName = process.argv[2];  //endPoint.substring(1)
+              let fileName = endpoint.substring(1); // process.argv[2];  //endPoint.substring(1)  'index.html'//
+              console.log(process.argv[2]);
+              console.log(fileName);
              fileName = fileName.replace(/\.\.\\/g,"");  // no permite ../   lo cambia por vacio 
              fileName = path3.resolve(rootDirectory); //  convertimos una ruta relativa a una ruta absoluta 
              let typeFile ;

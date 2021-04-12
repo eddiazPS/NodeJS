@@ -1,0 +1,116 @@
+[
+  {
+    "description": "    Como usuario del banco online\n    yo quiero visitar el sitio web del banco\n    para yo poder hacer login y entrar a mi cuenta ",
+    "keyword": "Feature",
+    "name": "Login banco",
+    "line": 2,
+    "id": "login-banco",
+    "tags": [
+      {
+        "name": "@LoginBanco",
+        "line": 1
+      }
+    ],
+    "uri": "test\\features\\login.feature",
+    "elements": [
+      {
+        "id": "login-banco;visiatar-la-pagina-de-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Visiatar la pagina de login",
+        "tags": [
+          {
+            "name": "@LoginBanco",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "utils\\hooks.js:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: Cannot read property 'TIMEOUT' of undefined\n    at World.<anonymous> (C:\\Users\\eddiaz\\Documents\\GitHub\\NodeJS\\PruebasAutomatizadas\\SELENIUM\\utils\\hooks.js:21:47)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "yo deberia ver una caja de texto para ingresar a mi email",
+            "match": {
+              "location": "steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "yo deberia ver una caja de texto para ingresar la password",
+            "match": {
+              "location": "steps\\loginSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "yo deberia ver un boton sign",
+            "match": {
+              "location": "steps\\loginSteps.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "yo deberia ver un login header con el texto \"Login banco online\"",
+            "match": {
+              "location": "steps\\loginSteps.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "yo deberia ver un label de direccion email con el texto \"Email address\"",
+            "match": {
+              "location": "steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "utils\\hooks.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
