@@ -1,0 +1,336 @@
+[
+  {
+    "description": "    As a crypto bank user\n    I want to visit the bank website\n    So that I can Login into my account",
+    "keyword": "Feature",
+    "name": "Crypto Bank Login",
+    "line": 1,
+    "id": "crypto-bank-login",
+    "tags": [],
+    "uri": "tests\\features\\login.feature",
+    "elements": [
+      {
+        "id": "crypto-bank-login;visit-the-login-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Visit the Login page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1627000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a text box for entering the email",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should see a text box for entering the password",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see a sign in button",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see a login header with text \"Crypto Bank Login\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I should see a email address label with text \"Email address\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "crypto-bank-login;attempt-to-login-without-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Attempt to login without credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I attempt to login without any credentials",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see login error message",
+            "match": {
+              "location": "tests\\features\\support\\loginErrorSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "crypto-bank-login;attempt-to-login-with-wrong-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Attempt to login with wrong credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3479000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I enter email as \"wrong@email.com\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I enter password as \"wrongPassword\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I attempt to login",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see login error message",
+            "match": {
+              "location": "tests\\features\\support\\loginErrorSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "crypto-bank-login;attempt-to-login-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Attempt to login with correct credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I enter email as \"me2@email.com\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I enter password as \"password2\"",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I attempt to login",
+            "match": {
+              "location": "tests\\features\\support\\loginSteps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see welcome page",
+            "match": {
+              "location": "tests\\features\\support\\welcomeSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

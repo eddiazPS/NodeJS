@@ -26,7 +26,5 @@ BDD\package-lock.json
 BDD\BDDejercicio\node_modules
 BDD\BDDejercicio\package-lock.json
 
-PruebasAutomatizadas\SELENIUM
-
-PruebasAutomatizadas\SeleniumBIT\node_modules
-PruebasAutomatizadas\SeleniumBIT\package-lock.json
+PruebasAutomatizadas\Selenium-code\node_modules
+PruebasAutomatizadas\Selenium-code\package-lock.json
