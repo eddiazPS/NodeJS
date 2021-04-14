@@ -184,7 +184,7 @@ comprarEmpanadas(empanadas, primeraCompra => {
 function comprarEmpanadasConPromesas(empanadasActuales) {
     const empanadas = empanadasActuales + 1;
     let promesa;
-    return promesa = new Promise((resolve) => resolve(empanadas));
+    return promesa = new Promise((resolve) => {resolve(empanadas);console.log(resolve(empanadas));});
 }
 
 function comprarTresEmpanadasConPromesas(empanadasActuales) {
@@ -361,6 +361,7 @@ asyncForEach ([1,2,3,4],function (x){
 console.log ("proceso async " );
 //delay();
 })
+
 
 
 

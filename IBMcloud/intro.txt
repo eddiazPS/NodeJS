@@ -1,6 +1,6 @@
 https://cloud.ibm.com/
 
-
+npm install --save @cloudant/cloudant
 
 
 
