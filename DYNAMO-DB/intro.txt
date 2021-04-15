@@ -1,0 +1,39 @@
+
+
+
+npm install aws-sdk
+
+
+
+https://docs.aws.amazon.com/es_es/amazondynamodb/latest/developerguide/GettingStarted.NodeJs.html
+Introducción a Node.js y DynamoDB - Amazon DynamoDB
+Con este tutorial descubrirá los pasos básicos para el desarrollo de aplicaciones de DynamoDB con Node.js, como, por ejemplo, la creación de tablas, la ejecución de operaciones de CRUD, la carga de datos y la ejecución de consultas.
+
+
+https://docs.aws.amazon.com/es_es/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+Implementación de DynamoDB localmente en el equipo - Amazon DynamoDB
+Aprenda a descargar e implementar Amazon DynamoDB localmente en su equipo con Apache Maven o Docker. Utilice DynamoDB local para desarrollar y probar código antes de implementar aplicaciones en el servicio DynamoDB web de .
+
+
+https://docs.aws.amazon.com/es_es/amazondynamodb/latest/developerguide/GettingStarted.NodeJs.Summary.html
+Summary - Amazon DynamoDB
+Consulte el tutorial y aprenda a modificar el código para utilizarlo con el servicio web de DynamoDB.
+
+
+
+
+uuid npm   usados para crear Id 
+
+Cli and secret acces key
+https://www.youtube.com/watch?v=n3KacV0UlSM
+
+
+serverless
+https://www.serverless.com/examples/
+
+Serverless Examples Directory (90+ Examples w/ Filters)
+Serverless Examples Explorer is a directory with 90+ examples of serverless applications & architectures built using Serverless Framework filterable by cloud platforms & programming languages
+
+
+
+

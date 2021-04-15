@@ -5,9 +5,9 @@ const databaseName = 'movies-demo';
 let getConnection = () => {
     return new Promise((resolve, reject) => {
         Cloudant({
-            url: 'https://33847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud', plugins: {
+            url: 'https://833847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud', plugins: {
                 iamauth:
-                    { iamApiKey: 'TDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI' }
+                    { iamApiKey: 'ETDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI' }
             }
         }, (error, connection) => {
             if (connection) {
@@ -20,7 +20,7 @@ let getConnection = () => {
     });
 };
 
-// agregar el campo all movies  if(doc.Movie_year < 2000){
+// agregar el campo all movies   ->  definido en la nube-> get-old-movies -> if(doc.Movie_year < 2000){
 let fetchDataFromDB = connection => {
     return new Promise((resolve, reject) => {
         let objectArray = [];

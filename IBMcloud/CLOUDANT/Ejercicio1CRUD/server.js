@@ -6,10 +6,10 @@ async function cloudant() {
     try {
         console.log('creando conexion ..');
         const cloudant = Cloudant({
-            url: "https://33847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud",
+            url: "https://833847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud",
             plugins: {
                 iamauth: {
-                    iamApiKey: "TDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI"
+                    iamApiKey: "ETDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI"
                 }
             }
 

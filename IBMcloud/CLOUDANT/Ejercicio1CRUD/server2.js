@@ -1,8 +1,8 @@
 var Cloudant = require('@cloudant/cloudant');
 
 
-var cloudant = new Cloudant({ url: 'https://33847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud', plugins: { iamauth:
-{ iamApiKey: 'TDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI' } } });
+var cloudant = new Cloudant({ url: 'https://833847aa2-ae74-4006-986e-e0c746f77bbb-bluemix.cloudantnosqldb.appdomain.cloud', plugins: { iamauth:
+{ iamApiKey: 'ETDphqkhTiGNYtSutOUGiIfnVYdjn1JlXtoYcebBjusVI' } } });
 
 db = cloudant.db.use('semillero');
 

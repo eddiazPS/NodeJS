@@ -1,0 +1,51 @@
+
+
+*****GRADLE*****
+
+-Para compilar proyectos de node, sin tener los gestores de paquete instalado.
+
+-Es limpio en cuanto a la configuracion de las cosas.
+
+
+desinstalar node y npm 
+
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* /usr/local/lib/dtrace/node.d ~/.npm ~/.node-gyp /opt/local/bin/node /opt/local/include/node /opt/local/lib/node_modules
+sudo rm -rf /usr/local/lib/node*
+sudo rm -rf /usr/local/include/node*
+sudo rm -rf /usr/local/bin/node*
+16:03
+sudo npm uninstall npm -g
+
+
+export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
+
+
+https://www.npmjs.com/package/figlet
+
+
+en la pagina de gradle 
+https://gradle.org/releases/
+
+v6.7.1
+
+Nov 16, 2020
+
+    Download: binary-only or complete
+    User Manual
+    API Javadoc
+    DSL Reference
+    Release Notes
+
+
+copiar la descarga en la carpeta /opt/gradle/
+
+sudo cp ../../Descargas/gradle-6.7.1-all.zip /opt/gradle/
+
+variable de entorno dentro del terminal que la declaro 
+export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
+
+
+history  -  historial de comandos 
+
+
+
