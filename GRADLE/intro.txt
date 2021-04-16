@@ -1,6 +1,26 @@
 
+https://www.serverless.com/examples/
+serverlessserverless
+Serverless Examples Directory (90+ Examples w/ Filters)
+Serverless Examples Explorer is a directory with 90+ examples of serverless applications & architectures built using Serverless Framework filterable by cloud platforms & programming languages
 
-*****GRADLE*****
+ 
+https://www.compose.com/
+compose.com
+Cloud Database Platform | Compose
+Cloud hosted, fully managed databases. Deploy MongoDB, Elasticsearch, Redis, PostgreSQL and other databases in minutes to AWS, GCP and IBM Cloud.
+
+ 
+https://www.jetbrains.com/es-es/idea/download/#section=linux
+JetBrainsJetBrains
+Descargar IntelliJ IDEA: el IDE de Java eficaz y ergonómico de JetBrains
+Descargue la versión más reciente de IntelliJ IDEA para Windows, macOS o Linux. (75 kB)
+Platforms:
+Windows, macOS, Linux
+
+
+Ubuntu - desintalar node
+****************************GRADLE**************************************
 
 -Para compilar proyectos de node, sin tener los gestores de paquete instalado.
 
@@ -46,6 +66,13 @@ export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
 
 
 history  -  historial de comandos 
+
+/cd ~/Documents/Gradle-node/
+
+
+ejecutar , gradle showMessage
+edgar@edgar-VirtualBox:~/Documentos/Gradle-node$ gradle showMessage
+
 
 
 

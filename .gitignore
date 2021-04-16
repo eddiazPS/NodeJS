@@ -1,3 +1,4 @@
+cht.txt
 node_modules
 package-lock.json
 .DS_Store
@@ -37,3 +38,4 @@ IBMcloud\CLOUDANT\CLOUDANT-example\package-lock.json
 
 DYNAMO-DB\node_modules
 DYNAMO-DB\package-lock.json
+

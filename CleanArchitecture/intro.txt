@@ -1,0 +1,60 @@
+
+Ubuntu - desintalar node
+*******************ARQUITECTURA*LIMPIA*******************************
+
+
+las politicas no deben saber nada sobre los detalles 
+reglas del negocio 
+
+Buen arquitecto sabe programar sino sabe dibujar y ya 
+
+no nesecita tanto esfuerzo para mantenerlo buena arquitectura 
+
+se nesecita parches migraciones y demas para mantenerlo y aumenta el esfuerzoa medida que pasa el tiempo el softaware tiene una mala arquitectura 
+
+un buen arquitecto ve las politicas de un negocio nada espesifico sobre las tecnologias,despues se piensa en los detalles 
+buen aqutecto publica la arquitectura en un repositorio para iniciar da la guia la sustentacion al equipo sobre lo que ha sustentado explica reglas y se hace oficial 
+
+casos de uso independiente de los detalles depende delas entidades
+
+clean-architecture
+Arquitectura limpia  https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html#the-dependency-rule 
+facil de mantener, define limite en las capas 
+
+https://docs.docker.com/compose/install/
+Docker DocumentationDocker Documentation
+Install Docker Compose
+How to install Docker Compose
+Hoy a las 10:50 (28 kB)
+https://docs.docker.com/images/docs@2x.png
+13:27
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+
+
+insert de usuario 
+curl -d '{"payload":{"firstName":"Briayan","lastName": "Piñeros","email": "hackbray@gmail.com","password":1234}}' -H "Content-Type: application/json" -X POST http://localhost:3000/users
+
+
+DATABASE_URI=mongodb://root:example@localhost:27017/?authMechanism=DEFAULT
+
+
+
+
+variable de entorno de mongo 
+
+578  export PATH=$PATH:/opt/gradle/gradle-6.7.1/bin
+  581  gradle index
+  582  env
+  583  export DATABASE_URI=mongodb://root:example@localhost:27017/?authMechanism=DEFAULT
+  584  gradle index
+  585  gradle test
+
+
+subir el server, gradle index
+edgar@edgar-VirtualBox:~/Documentos/Gradle-node/nodejs-clean-architecture-bit$ gradle index
+
+Hacer pruebas, gradle test
+edgar@edgar-VirtualBox:~/Documentos/Gradle-node/nodejs-clean-architecture-bit$ gradle test
+
+
