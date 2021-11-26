@@ -1,0 +1,10 @@
+
+modulo required en el navegador - https://www.npmjs.com/package/browserify  https://www.youtube.com/watch?v=_dtnD_8Att0
+
+STRAPI  nuevo endPoint     https://www.youtube.com/watch?v=KX42iCO0e3k
+
+SESION JS   https://www.youtube.com/watch?v=c3GoigQ5vRE
+
+--------------------sura
+
+intelyj    https://www.youtube.com/watch?v=EMLTOMdIz4w

@@ -917,10 +917,13 @@ console.log(euros.format(10));
   console.log(dolares.format(10));
 
   let pesos = Intl.NumberFormat("es", { style: "currency", currency: "COP" });
-  console.log(pesos.format(10));
+  console.log(pesos.format(5000000));
 
   let Libras = Intl.NumberFormat("es", { style: "currency", currency: "GBP" });
   console.log(Libras.format(10));
+
+ let number = 5000000;
+  console.log(new Intl.NumberFormat().format(number));
 
 //google ->  1000 EUR to COP 
 
@@ -1071,6 +1074,7 @@ console.log(url5.searchParams.has("q"));
 
 
 url5.searchParams.append ("others","w");
+url5.searchParams.append ("others2","w");
 console.log(url5.search);
 console.log(url5.href);
 // si se repiten 
@@ -1247,3 +1251,51 @@ try {
   console.error("contraseña digitada: " + error.parametro);
   //console.error(error.stack);
 }
+
+
+// EDITAR OBJETOS JAVASCRIPT
+
+
+let objUp = {
+  ingresos_mensuales: 2588888,
+  ingresos_extra: 1588888,
+  patrimonio: 28888888
+};
+
+
+function AtualizarObj(obj,param,val){
+
+  if (param == "mensuales"){
+       obj.ingresos_mensuales =val;
+  }else if (param == "extra"){
+       obj.ingresos_extra =val;
+  }else if (param == "patrimonio"){
+      obj.patrimonio =val;
+  }else {return  {erro:"No contemplado"} }
+}
+
+let = obj22 =AtualizarObj (objUp,"mensuales",2);
+console.log(obj22);
+
+objUp.ingresos_extra = 500;
+console.log(objUp);
+ 
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+//********************************************* FILLTERRS ********************************************
+//****************************************************************************************************************************
+//****************************************************************************************************************************
+
+
+let V1 = [2,2,2];
+V1.forEach(x=>console.log("hola"+x));
+
+let S1 = new Set ([1,2,3,'33']);
+S1.forEach(x=>console.log("hola"+x));
+
+let obj22 = {x:1,y:2};
+let M1 = new Map (Object.entries(obj22) );
+M1.forEach((y,x)=>console.log('llave: '+x+' valor: '+y));
+
+
+console.log('finnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn');
